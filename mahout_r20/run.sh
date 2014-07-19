@@ -28,7 +28,7 @@ $MAHOUT cvb \
   -x 1 \
   -seed 42 \
   -tf 0.1 \
-  --num_reduce_tasks 256 \
+  --num_reduce_tasks 10 \
   >> ${OUT_DIR}/log.log 2>&1 \
   && \
 #./mahout cvb -i /home/carsten/Desktop/mahout-sandbox/data/rows/matrix -o /home/carsten/Desktop/mahout-sandbox/data/topics/ -dict /home/carsten/Desktop/mahout-sandbox/data/vec/ -dt /home/carsten/Desktop/mahout-sandbox/data/docTopics/ --tempDir /home/carsten/Desktop/mahout-sandbox/data/temp/ -k 10 -nt 327680 -x 10 -tf 0.1 -seed 23
