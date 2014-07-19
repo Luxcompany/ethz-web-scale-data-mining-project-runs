@@ -11,13 +11,13 @@ WORK_DIR="`pwd`/out"
 OUT_DIR="/disk3/user_work/runs/mahout_r${RUN}"
 
 cd /opt/hadoop-2.4.0/etc
-git pull origin master >> ${OUT_DIR}/restart_cluster.log 2>&1
-cd
-/root/cluster_cp_config.rb >> ${OUT_DIR}/restart_cluster.log 2>&1
-/opt/hadoop-2.4.0/sbin/stop-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
-sleep 10
-/opt/hadoop-2.4.0/sbin/start-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
-sleep 100
+#git pull origin master >> ${OUT_DIR}/restart_cluster.log 2>&1
+#cd
+#/root/cluster_cp_config.rb >> ${OUT_DIR}/restart_cluster.log 2>&1
+#/opt/hadoop-2.4.0/sbin/stop-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
+#sleep 10
+#/opt/hadoop-2.4.0/sbin/start-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
+#sleep 100
 
 cd ${OUT_DIR}
 
