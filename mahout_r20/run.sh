@@ -1,6 +1,6 @@
 #!/bin/bash
 
-(cd /opt/hadoop-2.4.0/etc && git pull origin master && cd && /root/cluster_cp_config.rb && /opt/hadoop-2.4.0/sbin/stop-all.sh && /opt/hadoop-2.4.0/sbin/start-all.sh)
+(cd /opt/hadoop-2.4.0/etc && git pull origin master && cd && /root/cluster_cp_config.rb && /opt/hadoop-2.4.0/sbin/stop-all.sh && /opt/hadoop-2.4.0/sbin/start-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1)
 
 #Following: http://theglassicon.com/computing/machine-learning/running-lda-algorithm-mahout
 # and http://www.slideshare.net/Hadoop_Summit/stella-june27-1150amroom210av2
@@ -29,7 +29,7 @@ $MAHOUT cvb \
   -seed 42 \
   -tf 0.1 \
   --num_reduce_tasks 10 \
-  >> ${OUT_DIR}/log.log 2>&1 \
+  >> ${OUT_DIR}/cvb.log 2>&1 \
   && \
 #./mahout cvb -i /home/carsten/Desktop/mahout-sandbox/data/rows/matrix -o /home/carsten/Desktop/mahout-sandbox/data/topics/ -dict /home/carsten/Desktop/mahout-sandbox/data/vec/ -dt /home/carsten/Desktop/mahout-sandbox/data/docTopics/ --tempDir /home/carsten/Desktop/mahout-sandbox/data/temp/ -k 10 -nt 327680 -x 10 -tf 0.1 -seed 23
 #output term distributions for each topic
@@ -41,7 +41,7 @@ $MAHOUT vectordump \
   -sort true \
   -o ${OUT_DIR}/terms-topic.txt \
   -p true \
-  >> ${OUT_DIR}/log.log 2>&1 \
+  >> ${OUT_DIR}/vectordump_topics.log 2>&1 \
   && \
 #./mahout vectordump -i /home/carsten/Desktop/mahout-sandbox/data/topics/ -d /home/carsten/Desktop/mahout-sandbox/data/vec/dictionary.file-* -dt sequencefile --vectorSize 5 -sort true -o /home/carsten/Desktop/mahout-sandbox/data/terms-topic.txt -p true
 #output topic distributions for each document
@@ -53,6 +53,6 @@ $MAHOUT vectordump \
   -sort true \
   -o ${OUT_DIR}/topics-doc.txt \
   -p true \
-  >> ${OUT_DIR}/log.log 2>&1
+  >> ${OUT_DIR}/vectordump_doctopics.log 2>&1
 
 
