@@ -1,7 +1,5 @@
 #!/bin/bash
 
-(cd /opt/hadoop-2.4.0/etc && git pull origin master && cd && /root/cluster_cp_config.rb && /opt/hadoop-2.4.0/sbin/stop-all.sh && /opt/hadoop-2.4.0/sbin/start-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1)
-
 #Following: http://theglassicon.com/computing/machine-learning/running-lda-algorithm-mahout
 # and http://www.slideshare.net/Hadoop_Summit/stella-june27-1150amroom210av2
 # and http://stackoverflow.com/questions/21318459/how-to-run-mahout-cvb-on-reuters-news-on-cloudera-vm-cdh4-5-as-lda-is-not-longer
@@ -11,6 +9,8 @@ MAHOUT="mahout"
 HDFS_DIR="/runs/r${RUN}"
 WORK_DIR="`pwd`/out"
 OUT_DIR="/disk3/user_work/runs/mahout_r${RUN}"
+
+(cd /opt/hadoop-2.4.0/etc && git pull origin master && cd && /root/cluster_cp_config.rb && /opt/hadoop-2.4.0/sbin/stop-all.sh && /opt/hadoop-2.4.0/sbin/start-all.sh) >> ${OUT_DIR}/restart_cluster.log 2>&1
 
 #Run cvb
 #  -tf 0.1 \
