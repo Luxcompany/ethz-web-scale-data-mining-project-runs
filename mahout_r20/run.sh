@@ -10,9 +10,16 @@ HDFS_DIR="/runs/r${RUN}"
 WORK_DIR="`pwd`/out"
 OUT_DIR="/disk3/user_work/runs/mahout_r${RUN}"
 
-(cd /opt/hadoop-2.4.0/etc && git pull origin master && cd && /root/cluster_cp_config.rb && /opt/hadoop-2.4.0/sbin/stop-all.sh && /opt/hadoop-2.4.0/sbin/start-all.sh) >> ${OUT_DIR}/restart_cluster.log 2>&1
+#cd /opt/hadoop-2.4.0/etc
+#git pull origin master >> ${OUT_DIR}/restart_cluster.log 2>&1
+#cd
+#/root/cluster_cp_config.rb >> ${OUT_DIR}/restart_cluster.log 2>&1
+#/opt/hadoop-2.4.0/sbin/stop-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
+#sleep 5
+#/opt/hadoop-2.4.0/sbin/start-all.sh >> ${OUT_DIR}/restart_cluster.log 2>&1
+#sleep 5
 
-sleep 5
+cd ${OUT_DIR}
 
 #Run cvb
 #  -tf 0.1 \
