@@ -1,0 +1,51 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/20 02:46:30 WARN driver.MahoutDriver: No cvb.props found on classpath, will use command-line arguments only
+14/07/20 02:46:30 INFO common.AbstractJob: Command line arguments: {--convergenceDelta=[0.0], --dictionary=[/cw-seqdir-sparse-lda/dictionary.file-*], --doc_topic_output=[/runs/r23/doc-topics], --doc_topic_smoothing=[1.0E-4], --endPhase=[2147483647], --input=[/cw-out-matrix/matrix], --iteration_block_size=[10], --maxIter=[1], --max_doc_topic_iters=[10], --num_reduce_tasks=[2000], --num_topics=[10], --num_train_threads=[4], --num_update_threads=[4], --output=[/runs/r23/topics], --random_seed=[42], --startPhase=[0], --tempDir=[/runs/r23/cas-temp/], --term_topic_smoothing=[1.0E-4], --test_set_fraction=[0.1]}
+14/07/20 02:46:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/07/20 02:46:55 INFO cvb.CVB0Driver: Will run Collapsed Variational Bayes (0th-derivative approximation) learning for LDA on /cw-out-matrix/matrix (numTerms: 13914453), finding 10-topics, with document/topic prior 1.0E-4, topic/term prior 1.0E-4.  Maximum iterations to run will be 1, unless the change in perplexity is less than 0.0.  Topic model output (p(term|topic) for each topic) will be stored /runs/r23/topics.  Random initialization seed is 42, holding out 0.1 of the data for perplexity check
+
+14/07/20 02:46:55 INFO cvb.CVB0Driver: Dictionary to be used located /cw-seqdir-sparse-lda/dictionary.file-*
+p(topic|docId) will be stored /runs/r23/doc-topics
+
+14/07/20 02:46:55 INFO cvb.CVB0Driver: Current iteration number: 0
+14/07/20 02:46:55 INFO cvb.CVB0Driver: About to run iteration 1 of 1
+14/07/20 02:46:55 INFO cvb.CVB0Driver: About to run: Iteration 1 of 1, input path: /runs/r23/cas-temp/topicModelState/model-0
+14/07/20 02:46:55 INFO Configuration.deprecation: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+14/07/20 02:46:55 INFO Configuration.deprecation: mapred.compress.map.output is deprecated. Instead, use mapreduce.map.output.compress
+14/07/20 02:46:55 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+14/07/20 02:46:55 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/20 02:46:56 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/20 02:46:56 INFO mapreduce.JobSubmitter: number of splits:1096
+14/07/20 02:46:56 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405810452317_0003
+14/07/20 02:46:57 INFO impl.YarnClientImpl: Submitted application application_1405810452317_0003
+14/07/20 02:46:57 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405810452317_0003/
+14/07/20 02:46:57 INFO mapreduce.Job: Running job: job_1405810452317_0003
+14/07/20 02:47:04 INFO mapreduce.Job: Job job_1405810452317_0003 running in uber mode : false
+14/07/20 02:47:04 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/20 02:48:00 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/20 02:48:40 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/20 02:49:19 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/20 02:50:49 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/20 02:51:50 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/20 02:52:11 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/20 02:53:00 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/20 02:53:44 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/20 02:54:29 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/20 02:56:10 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/20 02:56:28 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/20 02:57:15 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/20 02:58:02 INFO mapreduce.Job:  map 13% reduce 0%
+14/07/20 02:58:37 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/20 02:59:42 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/20 03:00:52 INFO mapreduce.Job:  map 16% reduce 0%
+14/07/20 03:01:32 INFO mapreduce.Job:  map 17% reduce 0%
+14/07/20 03:02:11 INFO mapreduce.Job:  map 18% reduce 0%
+14/07/20 03:02:40 INFO mapreduce.Job:  map 19% reduce 0%
+14/07/20 03:02:56 INFO mapreduce.Job:  map 20% reduce 0%
+14/07/20 03:03:10 INFO mapreduce.Job:  map 21% reduce 0%
+14/07/20 03:03:25 INFO mapreduce.Job:  map 22% reduce 0%
+14/07/20 03:03:40 INFO mapreduce.Job:  map 23% reduce 0%
+14/07/20 03:03:56 INFO mapreduce.Job:  map 24% reduce 0%
+14/07/20 03:04:16 INFO mapreduce.Job:  map 25% reduce 0%
+14/07/20 03:04:34 INFO mapreduce.Job:  map 26% reduce 0%
