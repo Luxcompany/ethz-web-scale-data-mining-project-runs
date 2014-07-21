@@ -1,0 +1,8 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/21 09:59:31 INFO common.AbstractJob: Command line arguments: {--endPhase=[2147483647], --input=[/runs/sout/13/seqdir-sparse-lda/tf-vectors/], --output=[/runs/sout/13/cas-out-matrix], --startPhase=[0], --tempDir=[temp]}
+14/07/21 09:59:32 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/07/21 09:59:32 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+14/07/21 09:59:32 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+14/07/21 10:03:25 INFO vectors.RowIdJob: Wrote out matrix with 1993109 rows and 1579090 columns to /runs/sout/13/cas-out-matrix/matrix
+14/07/21 10:03:25 INFO driver.MahoutDriver: Program took 234303 ms (Minutes: 3.90505)
