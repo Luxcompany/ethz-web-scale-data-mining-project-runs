@@ -1,0 +1,8 @@
+2014-07-10 21:01:56,584 [Executor task launch worker-1] ERROR WarcFileProcessor - Exception processing record: clueweb12-0101wb-51-22353
+2014-07-10 21:59:12,679 [Executor task launch worker-4] ERROR WarcFileProcessor - Exception processing record: clueweb12-0301wb-69-14899
+2014-07-10 22:05:26,318 [Executor task launch worker-1] ERROR WarcFileProcessor - Exception processing record: clueweb12-0101wb-74-29914
+2014-07-10 22:37:09,218 [Executor task launch worker-15] ERROR WarcFileProcessor - Exception processing record: clueweb12-1017wb-43-20004
+2014-07-11 00:07:56,552 [Executor task launch worker-7] ERROR WarcFileProcessor - Exception processing record: clueweb12-0510wb-18-30603
+2014-07-11 00:41:47,316 [Executor task launch worker-11] ERROR WarcFileProcessor - Exception processing record: clueweb12-1303wb-55-15506
+2014-07-11 00:50:40,546 [Executor task launch worker-11] ERROR WarcFileProcessor - Exception processing record: clueweb12-1303wb-58-23363
+2014-07-11 01:00:21,908 [Executor task launch worker-8] ERROR WarcFileProcessor - Exception processing record: clueweb12-1716wb-31-05136
