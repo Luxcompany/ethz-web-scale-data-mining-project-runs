@@ -12,4 +12,5 @@ topics-doc.txt
 target
 *.crc
 *.warc
+git_project
 
