@@ -1,0 +1,7 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/22 05:07:12 INFO common.AbstractJob: Command line arguments: {--dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/lartop/00/cas-lda-topics/], --output=[/disk3/user_work/runs/mahout_large_topics/00/topics-doc.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[10]}
+14/07/22 05:07:12 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/07/22 05:07:13 INFO vectors.VectorDumper: Sort? true
+14/07/22 05:07:13 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_large_topics/00/topics-doc.txt
+14/07/22 05:08:42 INFO driver.MahoutDriver: Program took 90140 ms (Minutes: 1.5023333333333333)
