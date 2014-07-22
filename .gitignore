@@ -1,4 +1,3 @@
-/convert_all*
 /combine_files1
 /mahout_rcas*
 /reuters
@@ -9,5 +8,5 @@
 topics-doc.txt
 /word_count*/repo
 /word_count*/run.jar
-
+*.jar
 
