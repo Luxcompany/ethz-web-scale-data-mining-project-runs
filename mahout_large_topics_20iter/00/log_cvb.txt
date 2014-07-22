@@ -1,0 +1,1424 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/22 13:35:30 WARN driver.MahoutDriver: No cvb.props found on classpath, will use command-line arguments only
+14/07/22 13:35:30 INFO common.AbstractJob: Command line arguments: {--convergenceDelta=[0.0], --dictionary=[/runs/sout/00/seqdir-sparse-lda/dictionary.file-*], --doc_topic_output=[/runs/lartop_20/00/cas-lda-topics], --doc_topic_smoothing=[1.0E-4], --endPhase=[2147483647], --input=[/runs/sout/00/cas-out-matrix/matrix], --iteration_block_size=[10], --maxIter=[20], --max_doc_topic_iters=[10], --num_reduce_tasks=[200], --num_topics=[100], --num_train_threads=[4], --num_update_threads=[4], --output=[/runs/lartop_20/00/cas-lda], --random_seed=[23], --startPhase=[0], --tempDir=[/runs/lartop_20/00/cas-temp/], --term_topic_smoothing=[1.0E-4], --test_set_fraction=[0.1]}
+14/07/22 13:35:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/07/22 13:35:36 INFO cvb.CVB0Driver: Will run Collapsed Variational Bayes (0th-derivative approximation) learning for LDA on /runs/sout/00/cas-out-matrix/matrix (numTerms: 2212515), finding 100-topics, with document/topic prior 1.0E-4, topic/term prior 1.0E-4.  Maximum iterations to run will be 20, unless the change in perplexity is less than 0.0.  Topic model output (p(term|topic) for each topic) will be stored /runs/lartop_20/00/cas-lda.  Random initialization seed is 23, holding out 0.1 of the data for perplexity check
+
+14/07/22 13:35:36 INFO cvb.CVB0Driver: Dictionary to be used located /runs/sout/00/seqdir-sparse-lda/dictionary.file-*
+p(topic|docId) will be stored /runs/lartop_20/00/cas-lda-topics
+
+14/07/22 13:35:36 INFO cvb.CVB0Driver: Current iteration number: 0
+14/07/22 13:35:36 INFO cvb.CVB0Driver: About to run iteration 1 of 20
+14/07/22 13:35:36 INFO cvb.CVB0Driver: About to run: Iteration 1 of 20, input path: /runs/lartop_20/00/cas-temp/topicModelState/model-0
+14/07/22 13:35:36 INFO Configuration.deprecation: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+14/07/22 13:35:36 INFO Configuration.deprecation: mapred.compress.map.output is deprecated. Instead, use mapreduce.map.output.compress
+14/07/22 13:35:36 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+14/07/22 13:35:36 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/22 13:35:37 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/22 13:35:37 INFO mapreduce.JobSubmitter: number of splits:81
+14/07/22 13:35:38 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405868584891_0657
+14/07/22 13:35:38 INFO impl.YarnClientImpl: Submitted application application_1405868584891_0657
+14/07/22 13:35:38 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405868584891_0657/
+14/07/22 13:35:38 INFO mapreduce.Job: Running job: job_1405868584891_0657
+14/07/22 13:35:44 INFO mapreduce.Job: Job job_1405868584891_0657 running in uber mode : false
+14/07/22 13:35:44 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/22 13:37:12 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/22 13:38:12 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/22 13:38:50 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/22 13:39:20 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/22 13:39:48 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/22 13:40:15 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/22 13:40:42 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/22 13:41:09 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/22 13:41:35 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/22 13:42:02 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/22 13:42:30 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/22 13:43:01 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/22 13:43:33 INFO mapreduce.Job:  map 13% reduce 0%
+14/07/22 13:44:05 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/22 13:44:35 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/22 13:45:04 INFO mapreduce.Job:  map 16% reduce 0%
+14/07/22 13:45:32 INFO mapreduce.Job:  map 17% reduce 0%
+14/07/22 13:45:58 INFO mapreduce.Job:  map 18% reduce 0%
+14/07/22 13:46:26 INFO mapreduce.Job:  map 19% reduce 0%
+14/07/22 13:46:54 INFO mapreduce.Job:  map 20% reduce 0%
+14/07/22 13:47:21 INFO mapreduce.Job:  map 21% reduce 0%
+14/07/22 13:47:47 INFO mapreduce.Job:  map 22% reduce 0%
+14/07/22 13:48:15 INFO mapreduce.Job:  map 23% reduce 0%
+14/07/22 13:48:46 INFO mapreduce.Job:  map 24% reduce 0%
+14/07/22 13:49:18 INFO mapreduce.Job:  map 25% reduce 0%
+14/07/22 13:49:47 INFO mapreduce.Job:  map 26% reduce 0%
+14/07/22 13:50:17 INFO mapreduce.Job:  map 27% reduce 0%
+14/07/22 13:50:45 INFO mapreduce.Job:  map 28% reduce 0%
+14/07/22 13:51:12 INFO mapreduce.Job:  map 29% reduce 0%
+14/07/22 13:51:42 INFO mapreduce.Job:  map 30% reduce 0%
+14/07/22 13:52:12 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 13:52:45 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 13:53:17 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 13:53:51 INFO mapreduce.Job:  map 34% reduce 0%
+14/07/22 13:54:22 INFO mapreduce.Job:  map 35% reduce 0%
+14/07/22 13:54:56 INFO mapreduce.Job:  map 36% reduce 0%
+14/07/22 13:55:31 INFO mapreduce.Job:  map 37% reduce 0%
+14/07/22 13:56:06 INFO mapreduce.Job:  map 38% reduce 0%
+14/07/22 13:56:27 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 13:57:03 INFO mapreduce.Job:  map 40% reduce 0%
+14/07/22 13:57:09 INFO mapreduce.Job:  map 41% reduce 0%
+14/07/22 13:57:29 INFO mapreduce.Job:  map 42% reduce 0%
+14/07/22 13:58:04 INFO mapreduce.Job:  map 43% reduce 0%
+14/07/22 13:58:26 INFO mapreduce.Job:  map 44% reduce 1%
+14/07/22 13:58:47 INFO mapreduce.Job:  map 45% reduce 1%
+14/07/22 13:59:08 INFO mapreduce.Job:  map 46% reduce 1%
+14/07/22 13:59:12 INFO mapreduce.Job:  map 46% reduce 2%
+14/07/22 13:59:14 INFO mapreduce.Job:  map 47% reduce 2%
+14/07/22 13:59:50 INFO mapreduce.Job:  map 48% reduce 2%
+14/07/22 14:00:25 INFO mapreduce.Job:  map 49% reduce 2%
+14/07/22 14:01:01 INFO mapreduce.Job:  map 50% reduce 2%
+14/07/22 14:01:37 INFO mapreduce.Job:  map 51% reduce 2%
+14/07/22 14:02:11 INFO mapreduce.Job:  map 52% reduce 2%
+14/07/22 14:02:49 INFO mapreduce.Job:  map 53% reduce 2%
+14/07/22 14:03:27 INFO mapreduce.Job:  map 54% reduce 2%
+14/07/22 14:03:48 INFO mapreduce.Job:  map 55% reduce 2%
+14/07/22 14:04:22 INFO mapreduce.Job:  map 56% reduce 2%
+14/07/22 14:04:57 INFO mapreduce.Job:  map 57% reduce 2%
+14/07/22 14:05:33 INFO mapreduce.Job:  map 58% reduce 2%
+14/07/22 14:06:08 INFO mapreduce.Job:  map 59% reduce 2%
+14/07/22 14:06:44 INFO mapreduce.Job:  map 60% reduce 2%
+14/07/22 14:07:19 INFO mapreduce.Job:  map 61% reduce 2%
+14/07/22 14:07:54 INFO mapreduce.Job:  map 62% reduce 2%
+14/07/22 14:08:30 INFO mapreduce.Job:  map 63% reduce 2%
+14/07/22 14:09:04 INFO mapreduce.Job:  map 64% reduce 2%
+14/07/22 14:09:42 INFO mapreduce.Job:  map 65% reduce 2%
+14/07/22 14:10:17 INFO mapreduce.Job:  map 66% reduce 2%
+14/07/22 14:10:53 INFO mapreduce.Job:  map 67% reduce 2%
+14/07/22 14:11:31 INFO mapreduce.Job:  map 68% reduce 2%
+14/07/22 14:12:12 INFO mapreduce.Job:  map 69% reduce 2%
+14/07/22 14:12:55 INFO mapreduce.Job:  map 70% reduce 2%
+14/07/22 14:14:05 INFO mapreduce.Job:  map 71% reduce 2%
+14/07/22 14:15:19 INFO mapreduce.Job:  map 72% reduce 2%
+14/07/22 14:15:35 INFO mapreduce.Job:  map 72% reduce 3%
+14/07/22 14:15:52 INFO mapreduce.Job:  map 73% reduce 3%
+14/07/22 14:15:58 INFO mapreduce.Job:  map 74% reduce 3%
+14/07/22 14:16:02 INFO mapreduce.Job:  map 75% reduce 4%
+14/07/22 14:16:11 INFO mapreduce.Job:  map 76% reduce 5%
+14/07/22 14:16:15 INFO mapreduce.Job:  map 77% reduce 5%
+14/07/22 14:16:19 INFO mapreduce.Job:  map 78% reduce 5%
+14/07/22 14:16:20 INFO mapreduce.Job:  map 78% reduce 6%
+14/07/22 14:16:35 INFO mapreduce.Job:  map 79% reduce 6%
+14/07/22 14:16:37 INFO mapreduce.Job:  map 79% reduce 7%
+14/07/22 14:16:38 INFO mapreduce.Job:  map 80% reduce 7%
+14/07/22 14:16:41 INFO mapreduce.Job:  map 81% reduce 7%
+14/07/22 14:16:42 INFO mapreduce.Job:  map 81% reduce 8%
+14/07/22 14:16:42 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000068_0, Status : FAILED
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+Killed by external signal
+
+14/07/22 14:16:43 INFO mapreduce.Job:  map 80% reduce 8%
+14/07/22 14:16:45 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000035_0, Status : FAILED
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+Killed by external signal
+
+14/07/22 14:16:46 INFO mapreduce.Job:  map 79% reduce 8%
+14/07/22 14:16:47 INFO mapreduce.Job:  map 80% reduce 8%
+14/07/22 14:16:48 INFO mapreduce.Job:  map 80% reduce 9%
+14/07/22 14:16:49 INFO mapreduce.Job:  map 81% reduce 9%
+14/07/22 14:16:50 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_r_000121_0, Status : FAILED
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+Killed by external signal
+
+14/07/22 14:16:52 INFO mapreduce.Job:  map 82% reduce 10%
+14/07/22 14:16:57 INFO mapreduce.Job:  map 82% reduce 11%
+14/07/22 14:16:57 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_r_000122_0, Status : FAILED
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+Killed by external signal
+
+cleanup failed for container container_1405868584891_0657_01_000219 : java.io.IOException: Failed on local exception: java.io.IOException: Connection reset by peer; Host Details : local host is: "dco-node136-mgt.dco.ethz.ch/172.31.109.146"; destination host is: "dco-node133-mgt.dco.ethz.ch":45296; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:764)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:375)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:57)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:161)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:131)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:510)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hadoop.ipc.Client$Connection.receiveRpcResponse(Client.java:1054)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:949)
+
+14/07/22 14:16:58 INFO mapreduce.Job:  map 83% reduce 10%
+14/07/22 14:17:00 INFO mapreduce.Job:  map 83% reduce 11%
+14/07/22 14:17:14 INFO mapreduce.Job:  map 84% reduce 12%
+14/07/22 14:17:23 INFO mapreduce.Job:  map 85% reduce 12%
+14/07/22 14:17:25 INFO mapreduce.Job:  map 86% reduce 12%
+14/07/22 14:17:27 INFO mapreduce.Job:  map 86% reduce 13%
+14/07/22 14:17:32 INFO mapreduce.Job:  map 87% reduce 13%
+14/07/22 14:17:33 INFO mapreduce.Job:  map 87% reduce 14%
+14/07/22 14:17:45 INFO mapreduce.Job:  map 87% reduce 15%
+14/07/22 14:17:47 INFO mapreduce.Job:  map 88% reduce 15%
+14/07/22 14:17:54 INFO mapreduce.Job:  map 89% reduce 15%
+14/07/22 14:17:57 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000026_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000054 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:17:58 INFO mapreduce.Job:  map 87% reduce 15%
+14/07/22 14:17:59 INFO mapreduce.Job:  map 88% reduce 15%
+14/07/22 14:18:03 INFO mapreduce.Job:  map 89% reduce 16%
+14/07/22 14:18:10 INFO mapreduce.Job:  map 89% reduce 17%
+14/07/22 14:18:11 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000006_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000059 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:18:21 INFO mapreduce.Job:  map 89% reduce 18%
+14/07/22 14:18:23 INFO mapreduce.Job:  map 90% reduce 18%
+14/07/22 14:18:33 INFO mapreduce.Job:  map 90% reduce 19%
+14/07/22 14:18:44 INFO mapreduce.Job:  map 91% reduce 19%
+14/07/22 14:18:49 INFO mapreduce.Job:  map 91% reduce 20%
+14/07/22 14:18:51 INFO mapreduce.Job:  map 92% reduce 20%
+14/07/22 14:18:55 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000050_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000062 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:18:56 INFO mapreduce.Job:  map 91% reduce 20%
+14/07/22 14:19:04 INFO mapreduce.Job:  map 91% reduce 21%
+14/07/22 14:19:05 INFO mapreduce.Job:  map 92% reduce 21%
+14/07/22 14:19:07 INFO mapreduce.Job:  map 93% reduce 21%
+14/07/22 14:19:10 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000015_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000060 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:11 INFO mapreduce.Job:  map 91% reduce 21%
+14/07/22 14:19:14 INFO mapreduce.Job:  map 92% reduce 21%
+14/07/22 14:19:15 INFO mapreduce.Job:  map 93% reduce 21%
+14/07/22 14:19:22 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000078_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000058 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:23 INFO mapreduce.Job:  map 92% reduce 21%
+14/07/22 14:19:34 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000013_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000053 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:34 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000038_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000061 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:35 INFO mapreduce.Job:  map 89% reduce 21%
+14/07/22 14:19:47 INFO mapreduce.Job:  map 90% reduce 21%
+14/07/22 14:19:49 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000055_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000063 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:49 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000067_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000056 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:19:50 INFO mapreduce.Job:  map 87% reduce 21%
+14/07/22 14:20:01 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000058_0, Status : FAILED
+cleanup failed for container container_1405868584891_0657_01_000064 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+Too Many fetch failures.Failing the attempt
+14/07/22 14:20:02 INFO mapreduce.Job:  map 86% reduce 21%
+14/07/22 14:21:33 INFO mapreduce.Job:  map 87% reduce 21%
+14/07/22 14:24:07 INFO mapreduce.Job:  map 88% reduce 21%
+14/07/22 14:27:15 INFO mapreduce.Job:  map 89% reduce 21%
+14/07/22 14:27:24 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_m_000068_1, Status : FAILED
+AttemptID:attempt_1405868584891_0657_m_000068_1 Timed out after 600 secs
+cleanup failed for container container_1405868584891_0657_01_000220 : java.net.ConnectException: Call From dco-node136-mgt.dco.ethz.ch/172.31.109.146 to dco-node133-mgt.dco.ethz.ch:45296 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+14/07/22 14:27:25 INFO mapreduce.Job:  map 88% reduce 21%
+14/07/22 14:28:11 INFO mapreduce.Job:  map 89% reduce 21%
+14/07/22 14:28:21 INFO mapreduce.Job:  map 89% reduce 22%
+14/07/22 14:30:10 INFO mapreduce.Job:  map 90% reduce 22%
+14/07/22 14:30:14 INFO mapreduce.Job:  map 90% reduce 23%
+14/07/22 14:31:30 INFO mapreduce.Job:  map 91% reduce 23%
+14/07/22 14:33:57 INFO mapreduce.Job:  map 92% reduce 23%
+14/07/22 14:36:26 INFO mapreduce.Job:  map 93% reduce 23%
+14/07/22 14:41:24 INFO mapreduce.Job:  map 94% reduce 23%
+14/07/22 14:41:55 INFO mapreduce.Job:  map 95% reduce 23%
+14/07/22 14:41:56 INFO mapreduce.Job:  map 95% reduce 24%
+14/07/22 14:43:28 INFO mapreduce.Job:  map 96% reduce 24%
+14/07/22 14:46:44 INFO mapreduce.Job:  map 97% reduce 24%
+14/07/22 14:50:02 INFO mapreduce.Job:  map 98% reduce 24%
+14/07/22 14:53:01 INFO mapreduce.Job:  map 98% reduce 25%
+14/07/22 14:53:17 INFO mapreduce.Job:  map 99% reduce 25%
+14/07/22 15:00:34 INFO mapreduce.Job:  map 100% reduce 25%
+14/07/22 15:04:41 INFO mapreduce.Job:  map 100% reduce 35%
+14/07/22 15:04:42 INFO mapreduce.Job:  map 100% reduce 44%
+14/07/22 15:04:44 INFO mapreduce.Job:  map 100% reduce 45%
+14/07/22 15:04:45 INFO mapreduce.Job:  map 100% reduce 46%
+14/07/22 15:04:45 INFO mapreduce.Job: Task Id : attempt_1405868584891_0657_r_000089_0, Status : FAILED
+Error: java.lang.NullPointerException
+	at sun.net.www.protocol.http.HttpURLConnection.disconnect(HttpURLConnection.java:2807)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.closeConnection(Fetcher.java:222)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.interrupt(Fetcher.java:183)
+	at org.apache.hadoop.mapreduce.task.reduce.Fetcher.shutDown(Fetcher.java:191)
+	at org.apache.hadoop.mapreduce.task.reduce.Shuffle.run(Shuffle.java:145)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:376)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:167)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:162)
+
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+14/07/22 15:04:46 INFO mapreduce.Job:  map 100% reduce 48%
+14/07/22 15:04:47 INFO mapreduce.Job:  map 100% reduce 51%
+14/07/22 15:04:48 INFO mapreduce.Job:  map 100% reduce 56%
+14/07/22 15:04:49 INFO mapreduce.Job:  map 100% reduce 65%
+14/07/22 15:04:50 INFO mapreduce.Job:  map 100% reduce 71%
+14/07/22 15:04:51 INFO mapreduce.Job:  map 100% reduce 75%
+14/07/22 15:04:57 INFO mapreduce.Job:  map 100% reduce 76%
+14/07/22 15:04:58 INFO mapreduce.Job:  map 100% reduce 79%
+14/07/22 15:04:59 INFO mapreduce.Job:  map 100% reduce 81%
+14/07/22 15:05:00 INFO mapreduce.Job:  map 100% reduce 83%
+14/07/22 15:05:02 INFO mapreduce.Job:  map 100% reduce 84%
+14/07/22 15:05:10 INFO mapreduce.Job:  map 100% reduce 85%
+14/07/22 15:05:15 INFO mapreduce.Job:  map 100% reduce 86%
+14/07/22 15:05:16 INFO mapreduce.Job:  map 100% reduce 87%
+14/07/22 15:05:17 INFO mapreduce.Job:  map 100% reduce 89%
+14/07/22 15:05:18 INFO mapreduce.Job:  map 100% reduce 93%
+14/07/22 15:05:19 INFO mapreduce.Job:  map 100% reduce 95%
+14/07/22 15:05:20 INFO mapreduce.Job:  map 100% reduce 96%
+14/07/22 15:05:21 INFO mapreduce.Job:  map 100% reduce 97%
+14/07/22 15:05:28 INFO mapreduce.Job:  map 100% reduce 98%
+14/07/22 15:05:49 INFO mapreduce.Job:  map 100% reduce 99%
+14/07/22 15:05:51 INFO mapreduce.Job:  map 100% reduce 100%
+14/07/22 15:06:08 INFO mapreduce.Job: Job job_1405868584891_0657 completed successfully
+14/07/22 15:06:08 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=40447329278
+		FILE: Number of bytes written=59817541560
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1349217366
+		HDFS: Number of bytes written=1770033100
+		HDFS: Number of read operations=924
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=400
+	Job Counters 
+		Failed map tasks=13
+		Failed reduce tasks=3
+		Killed map tasks=5
+		Killed reduce tasks=1
+		Launched map tasks=99
+		Launched reduce tasks=204
+		Other local map tasks=17
+		Data-local map tasks=70
+		Rack-local map tasks=12
+		Total time spent by all maps in occupied slots (ms)=2025087560
+		Total time spent by all reduces in occupied slots (ms)=5474578430
+		Total time spent by all map tasks (ms)=202508756
+		Total time spent by all reduce tasks (ms)=547457843
+		Total vcore-seconds taken by all map tasks=202508756
+		Total vcore-seconds taken by all reduce tasks=547457843
+		Total megabyte-seconds taken by all map tasks=2025087560000
+		Total megabyte-seconds taken by all reduce tasks=5474578430000
+	Map-Reduce Framework
+		Map input records=2963089
+		Map output records=8100
+		Map output bytes=143371044900
+		Map output materialized bytes=19928775226
+		Input split bytes=11016
+		Combine input records=16200
+		Combine output records=16200
+		Reduce input groups=100
+		Reduce shuffle bytes=19928775226
+		Reduce input records=8100
+		Reduce output records=100
+		Spilled Records=24300
+		Shuffled Maps =16200
+		Failed Shuffles=1447
+		Merged Map outputs=16200
+		GC time elapsed (ms)=10201666
+		CPU time spent (ms)=261885800
+		Physical memory (bytes) snapshot=470440558592
+		Virtual memory (bytes) snapshot=3598645014528
+		Total committed heap usage (bytes)=401576820736
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=1154
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1349206350
+	File Output Format Counters 
+		Bytes Written=1770033100
+14/07/22 15:06:08 INFO cvb.CVB0Driver: About to run iteration 2 of 20
+14/07/22 15:06:08 INFO cvb.CVB0Driver: About to run: Iteration 2 of 20, input path: /runs/lartop_20/00/cas-temp/topicModelState/model-1
+14/07/22 15:06:08 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/22 15:06:09 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/22 15:06:09 INFO mapreduce.JobSubmitter: number of splits:81
+14/07/22 15:06:09 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405868584891_0664
+14/07/22 15:06:09 INFO impl.YarnClientImpl: Submitted application application_1405868584891_0664
+14/07/22 15:06:09 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405868584891_0664/
+14/07/22 15:06:09 INFO mapreduce.Job: Running job: job_1405868584891_0664
+14/07/22 15:07:31 INFO mapreduce.Job: Job job_1405868584891_0664 running in uber mode : false
+14/07/22 15:07:31 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/22 15:10:41 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/22 15:11:30 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/22 15:12:12 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/22 15:12:57 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/22 15:13:40 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/22 15:14:15 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/22 15:14:47 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/22 15:15:17 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/22 15:15:45 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/22 15:16:10 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/22 15:16:35 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/22 15:17:05 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/22 15:17:37 INFO mapreduce.Job:  map 13% reduce 0%
+14/07/22 15:18:09 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/22 15:18:40 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/22 15:19:11 INFO mapreduce.Job:  map 16% reduce 0%
+14/07/22 15:19:38 INFO mapreduce.Job:  map 17% reduce 0%
+14/07/22 15:20:05 INFO mapreduce.Job:  map 18% reduce 0%
+14/07/22 15:20:30 INFO mapreduce.Job:  map 19% reduce 0%
+14/07/22 15:21:01 INFO mapreduce.Job:  map 20% reduce 0%
+14/07/22 15:21:32 INFO mapreduce.Job:  map 21% reduce 0%
+14/07/22 15:22:05 INFO mapreduce.Job:  map 22% reduce 0%
+14/07/22 15:22:36 INFO mapreduce.Job:  map 23% reduce 0%
+14/07/22 15:23:09 INFO mapreduce.Job:  map 24% reduce 0%
+14/07/22 15:23:39 INFO mapreduce.Job:  map 25% reduce 0%
+14/07/22 15:24:08 INFO mapreduce.Job:  map 26% reduce 0%
+14/07/22 15:24:35 INFO mapreduce.Job:  map 27% reduce 0%
+14/07/22 15:24:50 INFO mapreduce.Job:  map 28% reduce 0%
+14/07/22 15:25:17 INFO mapreduce.Job:  map 29% reduce 0%
+14/07/22 15:25:48 INFO mapreduce.Job:  map 30% reduce 0%
+14/07/22 15:26:18 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 15:26:49 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 15:27:21 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 15:27:49 INFO mapreduce.Job:  map 34% reduce 0%
+14/07/22 15:28:05 INFO mapreduce.Job:  map 35% reduce 0%
+14/07/22 15:28:34 INFO mapreduce.Job:  map 36% reduce 0%
+14/07/22 15:29:01 INFO mapreduce.Job:  map 37% reduce 0%
+14/07/22 15:29:28 INFO mapreduce.Job:  map 38% reduce 0%
+14/07/22 15:29:53 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 15:30:23 INFO mapreduce.Job:  map 40% reduce 0%
+14/07/22 15:30:53 INFO mapreduce.Job:  map 41% reduce 0%
+14/07/22 15:31:25 INFO mapreduce.Job:  map 42% reduce 0%
+14/07/22 15:31:55 INFO mapreduce.Job:  map 43% reduce 0%
+14/07/22 15:32:31 INFO mapreduce.Job:  map 44% reduce 0%
+14/07/22 15:33:07 INFO mapreduce.Job:  map 45% reduce 0%
+14/07/22 15:33:28 INFO mapreduce.Job:  map 46% reduce 0%
+14/07/22 15:33:49 INFO mapreduce.Job:  map 47% reduce 0%
+14/07/22 15:34:05 INFO mapreduce.Job:  map 48% reduce 0%
+14/07/22 15:34:17 INFO mapreduce.Job:  map 49% reduce 0%
+14/07/22 15:34:18 INFO mapreduce.Job:  map 49% reduce 1%
+14/07/22 15:34:52 INFO mapreduce.Job:  map 50% reduce 1%
+14/07/22 15:35:06 INFO mapreduce.Job:  map 51% reduce 1%
+14/07/22 15:35:19 INFO mapreduce.Job:  map 52% reduce 1%
+14/07/22 15:35:21 INFO mapreduce.Job:  map 52% reduce 2%
+14/07/22 15:35:41 INFO mapreduce.Job:  map 53% reduce 2%
+14/07/22 15:36:02 INFO mapreduce.Job:  map 54% reduce 2%
+14/07/22 15:36:37 INFO mapreduce.Job:  map 55% reduce 2%
+14/07/22 15:37:15 INFO mapreduce.Job:  map 56% reduce 2%
+14/07/22 15:37:51 INFO mapreduce.Job:  map 57% reduce 2%
+14/07/22 15:38:29 INFO mapreduce.Job:  map 58% reduce 2%
+14/07/22 15:39:09 INFO mapreduce.Job:  map 59% reduce 2%
+14/07/22 15:39:45 INFO mapreduce.Job:  map 60% reduce 2%
+14/07/22 15:40:22 INFO mapreduce.Job:  map 61% reduce 2%
+14/07/22 15:41:02 INFO mapreduce.Job:  map 62% reduce 2%
+14/07/22 15:41:20 INFO mapreduce.Job:  map 63% reduce 2%
+14/07/22 15:41:26 INFO mapreduce.Job:  map 63% reduce 3%
+14/07/22 15:41:34 INFO mapreduce.Job:  map 64% reduce 3%
+14/07/22 15:41:54 INFO mapreduce.Job:  map 65% reduce 3%
+14/07/22 15:42:04 INFO mapreduce.Job:  map 66% reduce 3%
+14/07/22 15:42:46 INFO mapreduce.Job:  map 67% reduce 3%
+14/07/22 15:43:28 INFO mapreduce.Job:  map 68% reduce 3%
+14/07/22 15:43:32 INFO mapreduce.Job:  map 68% reduce 4%
+14/07/22 15:43:36 INFO mapreduce.Job:  map 69% reduce 4%
+14/07/22 15:44:05 INFO mapreduce.Job:  map 70% reduce 4%
+14/07/22 15:44:52 INFO mapreduce.Job:  map 71% reduce 4%
+14/07/22 15:45:35 INFO mapreduce.Job:  map 72% reduce 4%
+14/07/22 15:46:19 INFO mapreduce.Job:  map 73% reduce 4%
+14/07/22 15:47:23 INFO mapreduce.Job:  map 74% reduce 4%
+14/07/22 15:48:12 INFO mapreduce.Job:  map 75% reduce 4%
+14/07/22 15:48:14 INFO mapreduce.Job:  map 75% reduce 5%
+14/07/22 15:48:24 INFO mapreduce.Job:  map 76% reduce 5%
+14/07/22 15:48:31 INFO mapreduce.Job:  map 77% reduce 5%
+14/07/22 15:48:35 INFO mapreduce.Job:  map 77% reduce 6%
+14/07/22 15:48:46 INFO mapreduce.Job:  map 78% reduce 6%
+14/07/22 15:49:03 INFO mapreduce.Job:  map 78% reduce 7%
+14/07/22 15:49:05 INFO mapreduce.Job:  map 79% reduce 7%
+14/07/22 15:49:27 INFO mapreduce.Job:  map 80% reduce 7%
+14/07/22 15:50:20 INFO mapreduce.Job:  map 81% reduce 8%
+14/07/22 15:50:28 INFO mapreduce.Job:  map 82% reduce 8%
+14/07/22 15:50:39 INFO mapreduce.Job:  map 83% reduce 8%
+14/07/22 15:50:40 INFO mapreduce.Job:  map 83% reduce 9%
+14/07/22 15:50:46 INFO mapreduce.Job:  map 84% reduce 9%
+14/07/22 15:50:50 INFO mapreduce.Job:  map 84% reduce 10%
+14/07/22 15:50:56 INFO mapreduce.Job:  map 85% reduce 10%
+14/07/22 15:50:58 INFO mapreduce.Job:  map 85% reduce 11%
+14/07/22 15:51:04 INFO mapreduce.Job:  map 86% reduce 11%
+14/07/22 15:51:11 INFO mapreduce.Job:  map 87% reduce 12%
+14/07/22 15:51:21 INFO mapreduce.Job:  map 87% reduce 13%
+14/07/22 15:51:22 INFO mapreduce.Job:  map 88% reduce 13%
+14/07/22 15:51:25 INFO mapreduce.Job:  map 89% reduce 13%
+14/07/22 15:51:30 INFO mapreduce.Job:  map 89% reduce 14%
+14/07/22 15:51:36 INFO mapreduce.Job:  map 90% reduce 14%
+14/07/22 15:51:40 INFO mapreduce.Job:  map 90% reduce 15%
+14/07/22 15:52:20 INFO mapreduce.Job:  map 91% reduce 15%
+14/07/22 15:52:29 INFO mapreduce.Job:  map 91% reduce 16%
+14/07/22 15:53:37 INFO mapreduce.Job:  map 92% reduce 16%
+14/07/22 15:53:51 INFO mapreduce.Job:  map 92% reduce 17%
+14/07/22 15:54:10 INFO mapreduce.Job:  map 93% reduce 17%
+14/07/22 15:54:26 INFO mapreduce.Job:  map 93% reduce 18%
+14/07/22 15:54:36 INFO mapreduce.Job:  map 94% reduce 18%
+14/07/22 15:54:43 INFO mapreduce.Job:  map 94% reduce 19%
+14/07/22 15:54:44 INFO mapreduce.Job:  map 95% reduce 19%
+14/07/22 15:54:54 INFO mapreduce.Job:  map 95% reduce 20%
+14/07/22 15:55:02 INFO mapreduce.Job:  map 96% reduce 20%
+14/07/22 15:55:05 INFO mapreduce.Job:  map 96% reduce 21%
+14/07/22 15:55:14 INFO mapreduce.Job:  map 97% reduce 21%
+14/07/22 15:55:23 INFO mapreduce.Job:  map 97% reduce 22%
+14/07/22 15:55:34 INFO mapreduce.Job:  map 98% reduce 22%
+14/07/22 15:55:39 INFO mapreduce.Job:  map 98% reduce 23%
+14/07/22 15:55:47 INFO mapreduce.Job:  map 99% reduce 23%
+14/07/22 15:55:50 INFO mapreduce.Job:  map 99% reduce 24%
+14/07/22 15:56:14 INFO mapreduce.Job:  map 100% reduce 24%
+14/07/22 15:56:16 INFO mapreduce.Job:  map 100% reduce 25%
+14/07/22 15:56:24 INFO mapreduce.Job:  map 100% reduce 34%
+14/07/22 15:56:25 INFO mapreduce.Job:  map 100% reduce 42%
+14/07/22 15:56:26 INFO mapreduce.Job:  map 100% reduce 43%
+14/07/22 15:56:27 INFO mapreduce.Job:  map 100% reduce 44%
+14/07/22 15:56:28 INFO mapreduce.Job:  map 100% reduce 45%
+14/07/22 15:56:29 INFO mapreduce.Job:  map 100% reduce 48%
+14/07/22 15:56:30 INFO mapreduce.Job:  map 100% reduce 50%
+14/07/22 15:56:32 INFO mapreduce.Job:  map 100% reduce 55%
+14/07/22 15:56:33 INFO mapreduce.Job:  map 100% reduce 64%
+14/07/22 15:56:34 INFO mapreduce.Job:  map 100% reduce 74%
+14/07/22 15:56:40 INFO mapreduce.Job:  map 100% reduce 75%
+14/07/22 15:56:41 INFO mapreduce.Job:  map 100% reduce 77%
+14/07/22 15:56:42 INFO mapreduce.Job:  map 100% reduce 79%
+14/07/22 15:56:43 INFO mapreduce.Job:  map 100% reduce 80%
+14/07/22 15:56:44 INFO mapreduce.Job:  map 100% reduce 82%
+14/07/22 15:56:45 INFO mapreduce.Job:  map 100% reduce 83%
+14/07/22 15:56:46 INFO mapreduce.Job:  map 100% reduce 84%
+14/07/22 15:56:53 INFO mapreduce.Job:  map 100% reduce 85%
+14/07/22 15:56:59 INFO mapreduce.Job:  map 100% reduce 86%
+14/07/22 15:57:00 INFO mapreduce.Job:  map 100% reduce 87%
+14/07/22 15:57:01 INFO mapreduce.Job:  map 100% reduce 88%
+14/07/22 15:57:02 INFO mapreduce.Job:  map 100% reduce 89%
+14/07/22 15:57:03 INFO mapreduce.Job:  map 100% reduce 90%
+14/07/22 15:57:05 INFO mapreduce.Job:  map 100% reduce 91%
+14/07/22 15:57:06 INFO mapreduce.Job:  map 100% reduce 93%
+14/07/22 15:57:07 INFO mapreduce.Job:  map 100% reduce 94%
+14/07/22 15:57:08 INFO mapreduce.Job:  map 100% reduce 96%
+14/07/22 15:57:09 INFO mapreduce.Job:  map 100% reduce 98%
+14/07/22 15:57:10 INFO mapreduce.Job:  map 100% reduce 99%
+14/07/22 15:57:12 INFO mapreduce.Job:  map 100% reduce 100%
+14/07/22 15:57:18 INFO mapreduce.Job: Job job_1405868584891_0664 completed successfully
+14/07/22 15:57:18 INFO mapreduce.Job: Counters: 52
+	File System Counters
+		FILE: Number of bytes read=40488833330
+		FILE: Number of bytes written=59889698737
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=144721898466
+		HDFS: Number of bytes written=1770033100
+		HDFS: Number of read operations=33324
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=400
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=3
+		Launched map tasks=82
+		Launched reduce tasks=203
+		Data-local map tasks=74
+		Rack-local map tasks=8
+		Total time spent by all maps in occupied slots (ms)=1976218830
+		Total time spent by all reduces in occupied slots (ms)=1360765600
+		Total time spent by all map tasks (ms)=197621883
+		Total time spent by all reduce tasks (ms)=136076560
+		Total vcore-seconds taken by all map tasks=197621883
+		Total vcore-seconds taken by all reduce tasks=136076560
+		Total megabyte-seconds taken by all map tasks=1976218830000
+		Total megabyte-seconds taken by all reduce tasks=1360765600000
+	Map-Reduce Framework
+		Map input records=2963089
+		Map output records=8100
+		Map output bytes=143371044900
+		Map output materialized bytes=19950925667
+		Input split bytes=11016
+		Combine input records=16200
+		Combine output records=16200
+		Reduce input groups=100
+		Reduce shuffle bytes=19950925667
+		Reduce input records=8100
+		Reduce output records=100
+		Spilled Records=24300
+		Shuffled Maps =16200
+		Failed Shuffles=0
+		Merged Map outputs=16200
+		GC time elapsed (ms)=8660865
+		CPU time spent (ms)=265454760
+		Physical memory (bytes) snapshot=508592259072
+		Virtual memory (bytes) snapshot=3597565976576
+		Total committed heap usage (bytes)=495868968960
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1349206350
+	File Output Format Counters 
+		Bytes Written=1770033100
+14/07/22 15:57:18 INFO cvb.CVB0Driver: About to run iteration 3 of 20
+14/07/22 15:57:18 INFO cvb.CVB0Driver: About to run: Iteration 3 of 20, input path: /runs/lartop_20/00/cas-temp/topicModelState/model-2
+14/07/22 15:57:18 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/22 15:57:19 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/22 15:57:19 INFO mapreduce.JobSubmitter: number of splits:81
+14/07/22 15:57:19 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405868584891_0675
+14/07/22 15:57:19 INFO impl.YarnClientImpl: Submitted application application_1405868584891_0675
+14/07/22 15:57:19 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405868584891_0675/
+14/07/22 15:57:19 INFO mapreduce.Job: Running job: job_1405868584891_0675
+14/07/22 15:57:25 INFO mapreduce.Job: Job job_1405868584891_0675 running in uber mode : false
+14/07/22 15:57:25 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/22 16:00:26 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/22 16:01:44 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/22 16:02:27 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/22 16:03:07 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/22 16:03:47 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/22 16:04:20 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/22 16:04:46 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/22 16:05:16 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/22 16:05:40 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/22 16:06:00 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/22 16:06:32 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/22 16:06:56 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/22 16:07:21 INFO mapreduce.Job:  map 13% reduce 0%
+14/07/22 16:07:43 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/22 16:08:04 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/22 16:08:26 INFO mapreduce.Job:  map 16% reduce 0%
+14/07/22 16:08:47 INFO mapreduce.Job:  map 17% reduce 0%
+14/07/22 16:09:09 INFO mapreduce.Job:  map 18% reduce 0%
+14/07/22 16:09:35 INFO mapreduce.Job:  map 19% reduce 0%
+14/07/22 16:10:06 INFO mapreduce.Job:  map 20% reduce 0%
+14/07/22 16:10:35 INFO mapreduce.Job:  map 21% reduce 0%
+14/07/22 16:10:50 INFO mapreduce.Job:  map 22% reduce 0%
+14/07/22 16:11:13 INFO mapreduce.Job:  map 23% reduce 0%
+14/07/22 16:11:36 INFO mapreduce.Job:  map 24% reduce 0%
+14/07/22 16:11:59 INFO mapreduce.Job:  map 25% reduce 0%
+14/07/22 16:12:21 INFO mapreduce.Job:  map 26% reduce 0%
+14/07/22 16:12:45 INFO mapreduce.Job:  map 27% reduce 0%
+14/07/22 16:12:59 INFO mapreduce.Job:  map 28% reduce 0%
+14/07/22 16:13:19 INFO mapreduce.Job:  map 29% reduce 0%
+14/07/22 16:13:40 INFO mapreduce.Job:  map 30% reduce 0%
+14/07/22 16:14:04 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 16:14:29 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 16:14:58 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 16:15:28 INFO mapreduce.Job:  map 34% reduce 0%
+14/07/22 16:15:59 INFO mapreduce.Job:  map 35% reduce 0%
+14/07/22 16:16:28 INFO mapreduce.Job:  map 36% reduce 0%
+14/07/22 16:16:47 INFO mapreduce.Job:  map 37% reduce 0%
+14/07/22 16:17:08 INFO mapreduce.Job:  map 38% reduce 0%
+14/07/22 16:17:18 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 16:17:25 INFO mapreduce.Job:  map 39% reduce 1%
+14/07/22 16:17:39 INFO mapreduce.Job:  map 40% reduce 1%
+14/07/22 16:18:07 INFO mapreduce.Job:  map 41% reduce 1%
+14/07/22 16:18:33 INFO mapreduce.Job:  map 42% reduce 1%
+14/07/22 16:19:00 INFO mapreduce.Job:  map 43% reduce 1%
+14/07/22 16:19:29 INFO mapreduce.Job:  map 44% reduce 1%
+14/07/22 16:20:01 INFO mapreduce.Job:  map 45% reduce 1%
+14/07/22 16:20:35 INFO mapreduce.Job:  map 46% reduce 1%
+14/07/22 16:21:08 INFO mapreduce.Job:  map 47% reduce 1%
+14/07/22 16:21:25 INFO mapreduce.Job:  map 48% reduce 1%
+14/07/22 16:21:46 INFO mapreduce.Job:  map 49% reduce 1%
+14/07/22 16:21:56 INFO mapreduce.Job:  map 49% reduce 2%
+14/07/22 16:22:01 INFO mapreduce.Job:  map 50% reduce 2%
+14/07/22 16:22:17 INFO mapreduce.Job:  map 51% reduce 2%
+14/07/22 16:22:26 INFO mapreduce.Job:  map 52% reduce 2%
+14/07/22 16:22:41 INFO mapreduce.Job:  map 53% reduce 2%
+14/07/22 16:22:42 INFO mapreduce.Job:  map 53% reduce 3%
+14/07/22 16:23:08 INFO mapreduce.Job:  map 54% reduce 3%
+14/07/22 16:23:47 INFO mapreduce.Job:  map 55% reduce 3%
+14/07/22 16:24:10 INFO mapreduce.Job:  map 56% reduce 3%
+14/07/22 16:24:39 INFO mapreduce.Job:  map 57% reduce 3%
+14/07/22 16:25:04 INFO mapreduce.Job:  map 58% reduce 3%
+14/07/22 16:25:14 INFO mapreduce.Job:  map 59% reduce 3%
+14/07/22 16:25:18 INFO mapreduce.Job:  map 59% reduce 4%
+14/07/22 16:25:31 INFO mapreduce.Job:  map 60% reduce 4%
+14/07/22 16:25:53 INFO mapreduce.Job:  map 61% reduce 4%
+14/07/22 16:26:30 INFO mapreduce.Job:  map 62% reduce 4%
+14/07/22 16:27:11 INFO mapreduce.Job:  map 63% reduce 4%
+14/07/22 16:27:53 INFO mapreduce.Job:  map 64% reduce 4%
+14/07/22 16:28:37 INFO mapreduce.Job:  map 65% reduce 4%
+14/07/22 16:29:03 INFO mapreduce.Job:  map 66% reduce 4%
+14/07/22 16:29:38 INFO mapreduce.Job:  map 67% reduce 4%
+14/07/22 16:29:49 INFO mapreduce.Job:  map 67% reduce 5%
+14/07/22 16:30:04 INFO mapreduce.Job:  map 68% reduce 5%
+14/07/22 16:30:23 INFO mapreduce.Job:  map 69% reduce 5%
+14/07/22 16:30:44 INFO mapreduce.Job:  map 70% reduce 5%
+14/07/22 16:30:56 INFO mapreduce.Job:  map 70% reduce 6%
+14/07/22 16:31:21 INFO mapreduce.Job:  map 71% reduce 6%
+14/07/22 16:31:32 INFO mapreduce.Job:  map 72% reduce 6%
+14/07/22 16:32:22 INFO mapreduce.Job:  map 73% reduce 6%
+14/07/22 16:33:19 INFO mapreduce.Job:  map 74% reduce 6%
+14/07/22 16:33:52 INFO mapreduce.Job:  map 75% reduce 6%
+14/07/22 16:34:13 INFO mapreduce.Job:  map 75% reduce 7%
+14/07/22 16:34:17 INFO mapreduce.Job:  map 76% reduce 7%
+14/07/22 16:34:25 INFO mapreduce.Job:  map 77% reduce 7%
+14/07/22 16:34:39 INFO mapreduce.Job:  map 77% reduce 8%
+14/07/22 16:34:41 INFO mapreduce.Job:  map 78% reduce 8%
+14/07/22 16:35:24 INFO mapreduce.Job:  map 79% reduce 8%
+14/07/22 16:35:29 INFO mapreduce.Job:  map 80% reduce 9%
+14/07/22 16:35:41 INFO mapreduce.Job:  map 81% reduce 9%
+14/07/22 16:35:45 INFO mapreduce.Job:  map 81% reduce 10%
+14/07/22 16:36:12 INFO mapreduce.Job:  map 82% reduce 10%
+14/07/22 16:37:11 INFO mapreduce.Job:  map 83% reduce 10%
+14/07/22 16:37:21 INFO mapreduce.Job:  map 83% reduce 11%
+14/07/22 16:37:51 INFO mapreduce.Job:  map 84% reduce 11%
+14/07/22 16:38:06 INFO mapreduce.Job:  map 85% reduce 11%
+14/07/22 16:38:14 INFO mapreduce.Job:  map 85% reduce 12%
+14/07/22 16:38:50 INFO mapreduce.Job:  map 86% reduce 12%
+14/07/22 16:39:50 INFO mapreduce.Job:  map 87% reduce 12%
+14/07/22 16:39:53 INFO mapreduce.Job:  map 87% reduce 13%
+14/07/22 16:40:36 INFO mapreduce.Job:  map 88% reduce 13%
+14/07/22 16:40:49 INFO mapreduce.Job:  map 88% reduce 14%
+14/07/22 16:40:58 INFO mapreduce.Job:  map 89% reduce 14%
+14/07/22 16:41:18 INFO mapreduce.Job:  map 90% reduce 15%
+14/07/22 16:41:49 INFO mapreduce.Job:  map 91% reduce 15%
+14/07/22 16:41:51 INFO mapreduce.Job:  map 91% reduce 16%
+14/07/22 16:41:54 INFO mapreduce.Job:  map 92% reduce 16%
+14/07/22 16:42:02 INFO mapreduce.Job:  map 93% reduce 17%
+14/07/22 16:42:11 INFO mapreduce.Job:  map 93% reduce 18%
+14/07/22 16:42:54 INFO mapreduce.Job:  map 94% reduce 18%
+14/07/22 16:43:00 INFO mapreduce.Job:  map 94% reduce 19%
+14/07/22 16:43:19 INFO mapreduce.Job:  map 95% reduce 19%
+14/07/22 16:43:23 INFO mapreduce.Job:  map 95% reduce 20%
+14/07/22 16:43:33 INFO mapreduce.Job:  map 96% reduce 20%
+14/07/22 16:43:44 INFO mapreduce.Job:  map 96% reduce 21%
+14/07/22 16:43:48 INFO mapreduce.Job:  map 97% reduce 21%
+14/07/22 16:43:57 INFO mapreduce.Job:  map 97% reduce 22%
+14/07/22 16:44:08 INFO mapreduce.Job:  map 98% reduce 22%
+14/07/22 16:44:11 INFO mapreduce.Job:  map 98% reduce 23%
+14/07/22 16:44:19 INFO mapreduce.Job:  map 98% reduce 24%
+14/07/22 16:44:22 INFO mapreduce.Job:  map 99% reduce 24%
+14/07/22 16:44:38 INFO mapreduce.Job:  map 100% reduce 24%
+14/07/22 16:44:39 INFO mapreduce.Job:  map 100% reduce 25%
+14/07/22 16:44:58 INFO mapreduce.Job:  map 100% reduce 28%
+14/07/22 16:44:59 INFO mapreduce.Job:  map 100% reduce 40%
+14/07/22 16:45:00 INFO mapreduce.Job:  map 100% reduce 43%
+14/07/22 16:45:01 INFO mapreduce.Job:  map 100% reduce 45%
+14/07/22 16:45:02 INFO mapreduce.Job:  map 100% reduce 46%
+14/07/22 16:45:03 INFO mapreduce.Job:  map 100% reduce 48%
+14/07/22 16:45:04 INFO mapreduce.Job:  map 100% reduce 52%
+14/07/22 16:45:05 INFO mapreduce.Job:  map 100% reduce 59%
+14/07/22 16:45:06 INFO mapreduce.Job:  map 100% reduce 67%
+14/07/22 16:45:07 INFO mapreduce.Job:  map 100% reduce 74%
+14/07/22 16:45:08 INFO mapreduce.Job:  map 100% reduce 75%
+14/07/22 16:45:13 INFO mapreduce.Job:  map 100% reduce 76%
+14/07/22 16:45:14 INFO mapreduce.Job:  map 100% reduce 78%
+14/07/22 16:45:15 INFO mapreduce.Job:  map 100% reduce 80%
+14/07/22 16:45:16 INFO mapreduce.Job:  map 100% reduce 82%
+14/07/22 16:45:17 INFO mapreduce.Job:  map 100% reduce 84%
+14/07/22 16:45:25 INFO mapreduce.Job:  map 100% reduce 85%
+14/07/22 16:45:32 INFO mapreduce.Job:  map 100% reduce 86%
+14/07/22 16:45:33 INFO mapreduce.Job:  map 100% reduce 87%
+14/07/22 16:45:34 INFO mapreduce.Job:  map 100% reduce 88%
+14/07/22 16:45:35 INFO mapreduce.Job:  map 100% reduce 90%
+14/07/22 16:45:36 INFO mapreduce.Job:  map 100% reduce 91%
+14/07/22 16:45:37 INFO mapreduce.Job:  map 100% reduce 94%
+14/07/22 16:45:38 INFO mapreduce.Job:  map 100% reduce 95%
+14/07/22 16:45:39 INFO mapreduce.Job:  map 100% reduce 97%
+14/07/22 16:45:40 INFO mapreduce.Job:  map 100% reduce 98%
+14/07/22 16:45:41 INFO mapreduce.Job:  map 100% reduce 99%
+14/07/22 16:45:57 INFO mapreduce.Job:  map 100% reduce 100%
+14/07/22 16:46:08 INFO mapreduce.Job: Job job_1405868584891_0675 completed successfully
+14/07/22 16:46:09 INFO mapreduce.Job: Counters: 52
+	File System Counters
+		FILE: Number of bytes read=40792541280
+		FILE: Number of bytes written=60343490494
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=144721898466
+		HDFS: Number of bytes written=1770033100
+		HDFS: Number of read operations=33324
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=400
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=3
+		Launched map tasks=82
+		Launched reduce tasks=203
+		Data-local map tasks=81
+		Rack-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=1774423660
+		Total time spent by all reduces in occupied slots (ms)=1771535440
+		Total time spent by all map tasks (ms)=177442366
+		Total time spent by all reduce tasks (ms)=177153544
+		Total vcore-seconds taken by all map tasks=177442366
+		Total vcore-seconds taken by all reduce tasks=177153544
+		Total megabyte-seconds taken by all map tasks=1774423660000
+		Total megabyte-seconds taken by all reduce tasks=1771535440000
+	Map-Reduce Framework
+		Map input records=2963089
+		Map output records=8100
+		Map output bytes=143371044900
+		Map output materialized bytes=20102146128
+		Input split bytes=11016
+		Combine input records=16200
+		Combine output records=16200
+		Reduce input groups=100
+		Reduce shuffle bytes=20102146128
+		Reduce input records=8100
+		Reduce output records=100
+		Spilled Records=24300
+		Shuffled Maps =16200
+		Failed Shuffles=0
+		Merged Map outputs=16200
+		GC time elapsed (ms)=9740377
+		CPU time spent (ms)=268751900
+		Physical memory (bytes) snapshot=508028395520
+		Virtual memory (bytes) snapshot=3598035718144
+		Total committed heap usage (bytes)=493898694656
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1349206350
+	File Output Format Counters 
+		Bytes Written=1770033100
+14/07/22 16:46:09 INFO cvb.CVB0Driver: About to run iteration 4 of 20
+14/07/22 16:46:09 INFO cvb.CVB0Driver: About to run: Iteration 4 of 20, input path: /runs/lartop_20/00/cas-temp/topicModelState/model-3
+14/07/22 16:46:09 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/22 16:46:09 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/22 16:46:10 INFO mapreduce.JobSubmitter: number of splits:81
+14/07/22 16:46:10 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405868584891_0682
+14/07/22 16:46:10 INFO impl.YarnClientImpl: Submitted application application_1405868584891_0682
+14/07/22 16:46:10 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405868584891_0682/
+14/07/22 16:46:10 INFO mapreduce.Job: Running job: job_1405868584891_0682
+14/07/22 16:46:16 INFO mapreduce.Job: Job job_1405868584891_0682 running in uber mode : false
+14/07/22 16:46:16 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/22 16:49:32 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/22 16:50:53 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/22 16:51:42 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/22 16:52:13 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/22 16:52:43 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/22 16:53:09 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/22 16:53:32 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/22 16:53:53 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/22 16:54:14 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/22 16:54:38 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/22 16:55:09 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/22 16:55:39 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/22 16:56:08 INFO mapreduce.Job:  map 13% reduce 0%
+14/07/22 16:56:39 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/22 16:56:46 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/22 16:56:55 INFO mapreduce.Job: Task Id : attempt_1405868584891_0682_m_000067_0, Status : FAILED
+AttemptID:attempt_1405868584891_0682_m_000067_0 Timed out after 600 secs
+cleanup failed for container container_1405868584891_0682_01_000028 : java.net.ConnectException: Call From dco-node126-mgt.dco.ethz.ch/172.31.109.136 to dco-node132-mgt.dco.ethz.ch:44987 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1414)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy35.stopContainers(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.stopContainers(ContainerManagementProtocolPBClientImpl.java:110)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$Container.kill(ContainerLauncherImpl.java:206)
+	at org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl$EventProcessor.run(ContainerLauncherImpl.java:373)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:712)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:604)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:699)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:367)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1462)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1381)
+	... 9 more
+
+14/07/22 16:56:56 INFO mapreduce.Job:  map 14% reduce 0%
+14/07/22 16:57:08 INFO mapreduce.Job:  map 15% reduce 0%
+14/07/22 16:57:33 INFO mapreduce.Job:  map 16% reduce 0%
+14/07/22 16:57:55 INFO mapreduce.Job:  map 17% reduce 0%
+14/07/22 16:58:16 INFO mapreduce.Job:  map 18% reduce 0%
+14/07/22 16:58:37 INFO mapreduce.Job:  map 19% reduce 0%
+14/07/22 16:59:02 INFO mapreduce.Job:  map 20% reduce 0%
+14/07/22 16:59:24 INFO mapreduce.Job:  map 21% reduce 0%
+14/07/22 16:59:45 INFO mapreduce.Job:  map 22% reduce 0%
+14/07/22 17:00:08 INFO mapreduce.Job:  map 23% reduce 0%
+14/07/22 17:00:35 INFO mapreduce.Job:  map 24% reduce 0%
+14/07/22 17:00:54 INFO mapreduce.Job:  map 25% reduce 0%
+14/07/22 17:01:23 INFO mapreduce.Job:  map 26% reduce 0%
+14/07/22 17:01:54 INFO mapreduce.Job:  map 27% reduce 0%
+14/07/22 17:02:25 INFO mapreduce.Job:  map 28% reduce 0%
+14/07/22 17:02:53 INFO mapreduce.Job:  map 29% reduce 0%
+14/07/22 17:03:07 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 17:03:08 INFO mapreduce.Job:  map 40% reduce 0%
+14/07/22 17:03:17 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 17:03:27 INFO mapreduce.Job:  map 37% reduce 0%
+14/07/22 17:03:37 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 17:03:44 INFO mapreduce.Job:  map 34% reduce 0%
+14/07/22 17:03:47 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 17:03:50 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 17:03:57 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 17:04:07 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 17:04:17 INFO mapreduce.Job:  map 30% reduce 0%
+14/07/22 17:04:25 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 17:04:27 INFO mapreduce.Job:  map 29% reduce 0%
+14/07/22 17:04:32 INFO mapreduce.Job:  map 30% reduce 0%
+14/07/22 17:05:03 INFO mapreduce.Job:  map 31% reduce 0%
+14/07/22 17:05:31 INFO mapreduce.Job:  map 32% reduce 0%
+14/07/22 17:06:05 INFO mapreduce.Job:  map 33% reduce 0%
+14/07/22 17:06:38 INFO mapreduce.Job:  map 34% reduce 0%
+14/07/22 17:07:11 INFO mapreduce.Job:  map 35% reduce 0%
+14/07/22 17:07:45 INFO mapreduce.Job:  map 36% reduce 0%
+14/07/22 17:08:02 INFO mapreduce.Job:  map 37% reduce 0%
+14/07/22 17:08:27 INFO mapreduce.Job:  map 38% reduce 0%
+14/07/22 17:08:43 INFO mapreduce.Job:  map 39% reduce 0%
+14/07/22 17:08:46 INFO mapreduce.Job:  map 40% reduce 0%
+14/07/22 17:09:06 INFO mapreduce.Job:  map 41% reduce 0%
+14/07/22 17:09:14 INFO mapreduce.Job:  map 41% reduce 1%
+14/07/22 17:09:33 INFO mapreduce.Job:  map 42% reduce 1%
+14/07/22 17:09:58 INFO mapreduce.Job:  map 43% reduce 1%
+14/07/22 17:10:23 INFO mapreduce.Job:  map 44% reduce 1%
+14/07/22 17:10:37 INFO mapreduce.Job:  map 45% reduce 1%
+14/07/22 17:10:52 INFO mapreduce.Job:  map 46% reduce 1%
+14/07/22 17:11:13 INFO mapreduce.Job:  map 47% reduce 1%
+14/07/22 17:11:26 INFO mapreduce.Job:  map 48% reduce 1%
+14/07/22 17:11:28 INFO mapreduce.Job:  map 48% reduce 2%
+14/07/22 17:11:51 INFO mapreduce.Job:  map 49% reduce 2%
+14/07/22 17:12:19 INFO mapreduce.Job:  map 50% reduce 2%
+14/07/22 17:12:47 INFO mapreduce.Job:  map 51% reduce 2%
+14/07/22 17:13:13 INFO mapreduce.Job:  map 52% reduce 2%
+14/07/22 17:13:30 INFO mapreduce.Job:  map 53% reduce 2%
+14/07/22 17:13:46 INFO mapreduce.Job:  map 54% reduce 2%
+14/07/22 17:14:03 INFO mapreduce.Job:  map 55% reduce 2%
+14/07/22 17:14:20 INFO mapreduce.Job:  map 56% reduce 2%
+14/07/22 17:14:50 INFO mapreduce.Job:  map 57% reduce 2%
+14/07/22 17:15:04 INFO mapreduce.Job:  map 58% reduce 2%
+14/07/22 17:15:05 INFO mapreduce.Job:  map 58% reduce 3%
+14/07/22 17:15:27 INFO mapreduce.Job:  map 59% reduce 3%
+14/07/22 17:16:00 INFO mapreduce.Job:  map 60% reduce 3%
+14/07/22 17:16:22 INFO mapreduce.Job:  map 61% reduce 3%
+14/07/22 17:16:42 INFO mapreduce.Job:  map 62% reduce 3%
+14/07/22 17:17:17 INFO mapreduce.Job:  map 63% reduce 3%
+14/07/22 17:17:31 INFO mapreduce.Job:  map 64% reduce 3%
+14/07/22 17:17:35 INFO mapreduce.Job:  map 64% reduce 4%
+14/07/22 17:17:38 INFO mapreduce.Job:  map 65% reduce 4%
+14/07/22 17:17:53 INFO mapreduce.Job:  map 66% reduce 4%
+14/07/22 17:18:17 INFO mapreduce.Job:  map 67% reduce 4%
+14/07/22 17:18:32 INFO mapreduce.Job:  map 67% reduce 5%
+14/07/22 17:18:38 INFO mapreduce.Job:  map 68% reduce 5%
+14/07/22 17:18:46 INFO mapreduce.Job:  map 69% reduce 5%
+14/07/22 17:19:33 INFO mapreduce.Job:  map 70% reduce 5%
+14/07/22 17:20:26 INFO mapreduce.Job:  map 71% reduce 5%
+14/07/22 17:20:59 INFO mapreduce.Job:  map 72% reduce 5%
+14/07/22 17:21:19 INFO mapreduce.Job:  map 73% reduce 5%
+14/07/22 17:21:20 INFO mapreduce.Job:  map 73% reduce 6%
+14/07/22 17:21:48 INFO mapreduce.Job:  map 74% reduce 6%
+14/07/22 17:21:58 INFO mapreduce.Job:  map 75% reduce 6%
+14/07/22 17:22:17 INFO mapreduce.Job:  map 75% reduce 7%
+14/07/22 17:22:41 INFO mapreduce.Job:  map 76% reduce 7%
+14/07/22 17:23:21 INFO mapreduce.Job:  map 77% reduce 7%
+14/07/22 17:24:17 INFO mapreduce.Job:  map 78% reduce 7%
+14/07/22 17:25:14 INFO mapreduce.Job:  map 79% reduce 7%
+14/07/22 17:26:32 INFO mapreduce.Job:  map 80% reduce 7%
+14/07/22 17:26:52 INFO mapreduce.Job:  map 81% reduce 7%
+14/07/22 17:27:09 INFO mapreduce.Job:  map 81% reduce 8%
+14/07/22 17:27:11 INFO mapreduce.Job:  map 82% reduce 8%
+14/07/22 17:28:08 INFO mapreduce.Job:  map 83% reduce 8%
+14/07/22 17:28:25 INFO mapreduce.Job:  map 84% reduce 8%
+14/07/22 17:28:27 INFO mapreduce.Job:  map 84% reduce 9%
+14/07/22 17:28:37 INFO mapreduce.Job:  map 85% reduce 9%
+14/07/22 17:28:42 INFO mapreduce.Job:  map 85% reduce 10%
+14/07/22 17:28:48 INFO mapreduce.Job:  map 86% reduce 10%
+14/07/22 17:28:57 INFO mapreduce.Job:  map 87% reduce 10%
+14/07/22 17:28:59 INFO mapreduce.Job:  map 87% reduce 11%
+14/07/22 17:29:13 INFO mapreduce.Job:  map 88% reduce 11%
+14/07/22 17:29:15 INFO mapreduce.Job:  map 88% reduce 12%
+14/07/22 17:29:24 INFO mapreduce.Job:  map 89% reduce 12%
+14/07/22 17:29:32 INFO mapreduce.Job:  map 89% reduce 13%
+14/07/22 17:29:34 INFO mapreduce.Job:  map 90% reduce 13%
+14/07/22 17:30:06 INFO mapreduce.Job:  map 90% reduce 14%
+14/07/22 17:30:19 INFO mapreduce.Job:  map 91% reduce 14%
+14/07/22 17:31:05 INFO mapreduce.Job:  map 91% reduce 15%
+14/07/22 17:31:30 INFO mapreduce.Job:  map 92% reduce 15%
+14/07/22 17:31:36 INFO mapreduce.Job:  map 93% reduce 15%
+14/07/22 17:31:41 INFO mapreduce.Job:  map 93% reduce 16%
+14/07/22 17:31:50 INFO mapreduce.Job:  map 94% reduce 16%
+14/07/22 17:31:54 INFO mapreduce.Job:  map 94% reduce 17%
+14/07/22 17:32:00 INFO mapreduce.Job:  map 95% reduce 17%
+14/07/22 17:32:04 INFO mapreduce.Job:  map 95% reduce 18%
+14/07/22 17:32:14 INFO mapreduce.Job:  map 95% reduce 19%
+14/07/22 17:32:23 INFO mapreduce.Job:  map 96% reduce 19%
+14/07/22 17:32:33 INFO mapreduce.Job:  map 97% reduce 19%
+14/07/22 17:32:37 INFO mapreduce.Job:  map 97% reduce 20%
+14/07/22 17:33:03 INFO mapreduce.Job:  map 98% reduce 20%
+14/07/22 17:33:07 INFO mapreduce.Job:  map 98% reduce 21%
+14/07/22 17:33:08 INFO mapreduce.Job:  map 99% reduce 21%
+14/07/22 17:33:16 INFO mapreduce.Job:  map 99% reduce 22%
+14/07/22 17:33:30 INFO mapreduce.Job:  map 100% reduce 22%
+14/07/22 17:33:33 INFO mapreduce.Job:  map 100% reduce 23%
+14/07/22 17:33:54 INFO mapreduce.Job:  map 100% reduce 27%
+14/07/22 17:33:56 INFO mapreduce.Job:  map 100% reduce 36%
+14/07/22 17:33:57 INFO mapreduce.Job:  map 100% reduce 37%
+14/07/22 17:33:58 INFO mapreduce.Job:  map 100% reduce 38%
+14/07/22 17:33:59 INFO mapreduce.Job:  map 100% reduce 40%
+14/07/22 17:34:00 INFO mapreduce.Job:  map 100% reduce 42%
+14/07/22 17:34:01 INFO mapreduce.Job:  map 100% reduce 43%
+14/07/22 17:34:02 INFO mapreduce.Job:  map 100% reduce 48%
+14/07/22 17:34:03 INFO mapreduce.Job:  map 100% reduce 52%
+14/07/22 17:34:04 INFO mapreduce.Job:  map 100% reduce 59%
+14/07/22 17:34:05 INFO mapreduce.Job:  map 100% reduce 64%
+14/07/22 17:34:06 INFO mapreduce.Job:  map 100% reduce 65%
+14/07/22 17:34:07 INFO mapreduce.Job:  map 100% reduce 66%
+14/07/22 17:34:08 INFO mapreduce.Job:  map 100% reduce 67%
+14/07/22 17:34:09 INFO mapreduce.Job:  map 100% reduce 68%
+14/07/22 17:34:10 INFO mapreduce.Job:  map 100% reduce 72%
+14/07/22 17:34:11 INFO mapreduce.Job:  map 100% reduce 76%
+14/07/22 17:34:12 INFO mapreduce.Job:  map 100% reduce 80%
+14/07/22 17:34:13 INFO mapreduce.Job:  map 100% reduce 82%
+14/07/22 17:34:14 INFO mapreduce.Job:  map 100% reduce 84%
+14/07/22 17:34:22 INFO mapreduce.Job:  map 100% reduce 85%
+14/07/22 17:34:29 INFO mapreduce.Job:  map 100% reduce 86%
+14/07/22 17:34:30 INFO mapreduce.Job:  map 100% reduce 87%
+14/07/22 17:34:31 INFO mapreduce.Job:  map 100% reduce 89%
+14/07/22 17:34:32 INFO mapreduce.Job:  map 100% reduce 91%
+14/07/22 17:34:33 INFO mapreduce.Job:  map 100% reduce 93%
+14/07/22 17:34:34 INFO mapreduce.Job:  map 100% reduce 94%
+14/07/22 17:34:35 INFO mapreduce.Job:  map 100% reduce 97%
+14/07/22 17:34:36 INFO mapreduce.Job:  map 100% reduce 98%
+14/07/22 17:34:37 INFO mapreduce.Job:  map 100% reduce 99%
+14/07/22 17:34:38 INFO mapreduce.Job:  map 100% reduce 100%
+14/07/22 17:34:41 INFO mapreduce.Job: Job job_1405868584891_0682 completed successfully
+14/07/22 17:34:41 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=40890293630
+		FILE: Number of bytes written=60490261076
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=144721898466
+		HDFS: Number of bytes written=1770033100
+		HDFS: Number of read operations=33324
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=400
+	Job Counters 
+		Failed map tasks=1
+		Killed map tasks=11
+		Killed reduce tasks=1
+		Launched map tasks=93
+		Launched reduce tasks=201
+		Other local map tasks=1
+		Data-local map tasks=81
+		Rack-local map tasks=11
+		Total time spent by all maps in occupied slots (ms)=1811890820
+		Total time spent by all reduces in occupied slots (ms)=1405817030
+		Total time spent by all map tasks (ms)=181189082
+		Total time spent by all reduce tasks (ms)=140581703
+		Total vcore-seconds taken by all map tasks=181189082
+		Total vcore-seconds taken by all reduce tasks=140581703
+		Total megabyte-seconds taken by all map tasks=1811890820000
+		Total megabyte-seconds taken by all reduce tasks=1405817030000
+	Map-Reduce Framework
+		Map input records=2963089
+		Map output records=8100
+		Map output bytes=143371044900
+		Map output materialized bytes=20151124616
+		Input split bytes=11016
+		Combine input records=16200
+		Combine output records=16200
+		Reduce input groups=100
+		Reduce shuffle bytes=20151124616
+		Reduce input records=8100
+		Reduce output records=100
+		Spilled Records=24300
+		Shuffled Maps =16200
+		Failed Shuffles=0
+		Merged Map outputs=16200
+		GC time elapsed (ms)=8152608
+		CPU time spent (ms)=255719420
+		Physical memory (bytes) snapshot=506209607680
+		Virtual memory (bytes) snapshot=3597657706496
+		Total committed heap usage (bytes)=486517243904
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1349206350
+	File Output Format Counters 
+		Bytes Written=1770033100
+14/07/22 17:34:41 INFO cvb.CVB0Driver: About to run iteration 5 of 20
+14/07/22 17:34:41 INFO cvb.CVB0Driver: About to run: Iteration 5 of 20, input path: /runs/lartop_20/00/cas-temp/topicModelState/model-4
+14/07/22 17:34:41 INFO client.RMProxy: Connecting to ResourceManager at dco-node121.dco.ethz.ch/172.31.109.131:8032
+14/07/22 17:34:42 INFO input.FileInputFormat: Total input paths to process : 1
+14/07/22 17:34:42 INFO mapreduce.JobSubmitter: number of splits:81
+14/07/22 17:34:42 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1405868584891_0688
+14/07/22 17:34:42 INFO impl.YarnClientImpl: Submitted application application_1405868584891_0688
+14/07/22 17:34:42 INFO mapreduce.Job: The url to track the job: http://dco-node121.dco.ethz.ch:8088/proxy/application_1405868584891_0688/
+14/07/22 17:34:42 INFO mapreduce.Job: Running job: job_1405868584891_0688
+14/07/22 17:34:49 INFO mapreduce.Job: Job job_1405868584891_0688 running in uber mode : false
+14/07/22 17:34:49 INFO mapreduce.Job:  map 0% reduce 0%
+14/07/22 17:37:38 INFO mapreduce.Job:  map 1% reduce 0%
+14/07/22 17:38:14 INFO mapreduce.Job:  map 2% reduce 0%
+14/07/22 17:38:43 INFO mapreduce.Job:  map 3% reduce 0%
+14/07/22 17:39:09 INFO mapreduce.Job:  map 4% reduce 0%
+14/07/22 17:39:34 INFO mapreduce.Job:  map 5% reduce 0%
+14/07/22 17:40:00 INFO mapreduce.Job:  map 6% reduce 0%
+14/07/22 17:40:26 INFO mapreduce.Job:  map 7% reduce 0%
+14/07/22 17:40:50 INFO mapreduce.Job:  map 8% reduce 0%
+14/07/22 17:41:15 INFO mapreduce.Job:  map 9% reduce 0%
+14/07/22 17:41:38 INFO mapreduce.Job:  map 10% reduce 0%
+14/07/22 17:41:59 INFO mapreduce.Job:  map 11% reduce 0%
+14/07/22 17:42:20 INFO mapreduce.Job:  map 12% reduce 0%
+14/07/22 17:42:45 INFO mapreduce.Job:  map 13% reduce 0%
