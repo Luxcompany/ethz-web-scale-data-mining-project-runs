@@ -1,0 +1,3 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/23 09:33:56 WARN fs.FileUtil: Failed to delete file or dir [/disk3/hadoop/hadoop-unjar4710806983622426348/org/apache/mahout/math/map]: it still exists.
