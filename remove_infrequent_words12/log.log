@@ -246,3 +246,516 @@ java.net.BindException: Address already in use
 2014-07-23 06:04:51,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
 2014-07-23 06:05:06,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
 2014-07-23 06:05:21,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:05:36,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:05:51,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:06:06,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:06:21,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:06:36,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:06:51,113 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:07:06,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:07:21,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:07:36,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:07:51,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:08:06,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:08:21,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:08:36,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:08:51,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:09:06,112 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 06:09:10,193 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/0 on worker-20140722232232-dco-node135-mgt.dco.ethz.ch-56045 (dco-node135-mgt.dco.ethz.ch:56045) with 2 cores
+2014-07-23 06:09:10,194 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/0 on hostPort dco-node135-mgt.dco.ethz.ch:56045 with 2 cores, 70.0 GB RAM
+2014-07-23 06:09:10,195 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/1 on worker-20140722232232-dco-node125-mgt.dco.ethz.ch-41556 (dco-node125-mgt.dco.ethz.ch:41556) with 2 cores
+2014-07-23 06:09:10,195 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/1 on hostPort dco-node125-mgt.dco.ethz.ch:41556 with 2 cores, 70.0 GB RAM
+2014-07-23 06:09:10,195 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/2 on worker-20140722232232-dco-node124-mgt.dco.ethz.ch-46656 (dco-node124-mgt.dco.ethz.ch:46656) with 2 cores
+2014-07-23 06:09:10,195 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/2 on hostPort dco-node124-mgt.dco.ethz.ch:46656 with 2 cores, 70.0 GB RAM
+2014-07-23 06:09:10,197 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/3 on worker-20140722232232-dco-node123-mgt.dco.ethz.ch-52179 (dco-node123-mgt.dco.ethz.ch:52179) with 2 cores
+2014-07-23 06:09:10,197 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/3 on hostPort dco-node123-mgt.dco.ethz.ch:52179 with 2 cores, 70.0 GB RAM
+2014-07-23 06:09:10,199 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/4 on worker-20140722232232-dco-node122-mgt.dco.ethz.ch-51038 (dco-node122-mgt.dco.ethz.ch:51038) with 1 cores
+2014-07-23 06:09:10,199 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/4 on hostPort dco-node122-mgt.dco.ethz.ch:51038 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,201 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/5 on worker-20140722232232-dco-node132-mgt.dco.ethz.ch-45072 (dco-node132-mgt.dco.ethz.ch:45072) with 1 cores
+2014-07-23 06:09:10,201 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/5 on hostPort dco-node132-mgt.dco.ethz.ch:45072 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,202 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/6 on worker-20140722232232-dco-node131-mgt.dco.ethz.ch-50734 (dco-node131-mgt.dco.ethz.ch:50734) with 1 cores
+2014-07-23 06:09:10,203 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/6 on hostPort dco-node131-mgt.dco.ethz.ch:50734 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,204 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/7 on worker-20140722232232-dco-node133-mgt.dco.ethz.ch-44156 (dco-node133-mgt.dco.ethz.ch:44156) with 1 cores
+2014-07-23 06:09:10,205 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/7 on hostPort dco-node133-mgt.dco.ethz.ch:44156 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,206 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/8 on worker-20140722232232-dco-node127-mgt.dco.ethz.ch-60499 (dco-node127-mgt.dco.ethz.ch:60499) with 1 cores
+2014-07-23 06:09:10,206 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/8 on hostPort dco-node127-mgt.dco.ethz.ch:60499 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,209 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/9 on worker-20140722232232-dco-node121-mgt.dco.ethz.ch-45820 (dco-node121-mgt.dco.ethz.ch:45820) with 1 cores
+2014-07-23 06:09:10,210 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/9 on hostPort dco-node121-mgt.dco.ethz.ch:45820 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,211 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/10 on worker-20140722232232-dco-node129-mgt.dco.ethz.ch-37573 (dco-node129-mgt.dco.ethz.ch:37573) with 1 cores
+2014-07-23 06:09:10,211 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/10 on hostPort dco-node129-mgt.dco.ethz.ch:37573 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,212 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/11 on worker-20140722232232-dco-node128-mgt.dco.ethz.ch-58779 (dco-node128-mgt.dco.ethz.ch:58779) with 1 cores
+2014-07-23 06:09:10,213 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/11 on hostPort dco-node128-mgt.dco.ethz.ch:58779 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,214 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/12 on worker-20140722232232-dco-node134-mgt.dco.ethz.ch-42367 (dco-node134-mgt.dco.ethz.ch:42367) with 1 cores
+2014-07-23 06:09:10,214 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/12 on hostPort dco-node134-mgt.dco.ethz.ch:42367 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,218 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/13 on worker-20140722232231-dco-node130-mgt.dco.ethz.ch-56551 (dco-node130-mgt.dco.ethz.ch:56551) with 1 cores
+2014-07-23 06:09:10,219 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/13 on hostPort dco-node130-mgt.dco.ethz.ch:56551 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,219 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/14 on worker-20140722232232-dco-node136-mgt.dco.ethz.ch-34960 (dco-node136-mgt.dco.ethz.ch:34960) with 1 cores
+2014-07-23 06:09:10,220 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/14 on hostPort dco-node136-mgt.dco.ethz.ch:34960 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,221 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723060105-0015/15 on worker-20140722232232-dco-node126-mgt.dco.ethz.ch-38949 (dco-node126-mgt.dco.ethz.ch:38949) with 1 cores
+2014-07-23 06:09:10,222 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723060105-0015/15 on hostPort dco-node126-mgt.dco.ethz.ch:38949 with 1 cores, 70.0 GB RAM
+2014-07-23 06:09:10,240 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/4 is now RUNNING
+2014-07-23 06:09:10,241 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/5 is now RUNNING
+2014-07-23 06:09:10,243 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/3 is now RUNNING
+2014-07-23 06:09:10,245 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/13 is now RUNNING
+2014-07-23 06:09:10,247 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/7 is now RUNNING
+2014-07-23 06:09:10,249 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/15 is now RUNNING
+2014-07-23 06:09:10,252 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/2 is now RUNNING
+2014-07-23 06:09:10,255 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/12 is now RUNNING
+2014-07-23 06:09:10,258 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/6 is now RUNNING
+2014-07-23 06:09:10,259 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/11 is now RUNNING
+2014-07-23 06:09:10,261 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/8 is now RUNNING
+2014-07-23 06:09:10,263 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/10 is now RUNNING
+2014-07-23 06:09:10,264 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/14 is now RUNNING
+2014-07-23 06:09:10,266 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/0 is now RUNNING
+2014-07-23 06:09:10,269 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/1 is now RUNNING
+2014-07-23 06:09:10,273 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723060105-0015/9 is now RUNNING
+2014-07-23 06:09:12,325 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node130-mgt.dco.ethz.ch:42529/user/Executor#-34268398] with ID 13
+2014-07-23 06:09:12,332 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:0 as TID 0 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:12,338 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:0 as 2026 bytes in 4 ms
+2014-07-23 06:09:12,622 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node130-mgt.dco.ethz.ch:59947 with 40.3 GB RAM
+2014-07-23 06:09:13,241 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node125-mgt.dco.ethz.ch:46735/user/Executor#-285181063] with ID 1
+2014-07-23 06:09:13,249 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:1 as TID 1 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,250 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:1 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,251 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:2 as TID 2 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,251 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:2 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,251 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node122-mgt.dco.ethz.ch:38835/user/Executor#-379942515] with ID 4
+2014-07-23 06:09:13,252 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:3 as TID 3 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,253 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:3 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,254 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node136-mgt.dco.ethz.ch:35447/user/Executor#1636829557] with ID 14
+2014-07-23 06:09:13,254 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:4 as TID 4 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,255 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:4 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,263 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node124-mgt.dco.ethz.ch:51655/user/Executor#-1321927667] with ID 2
+2014-07-23 06:09:13,263 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:5 as TID 5 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,264 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:5 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,264 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:6 as TID 6 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,266 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:6 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,270 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node129-mgt.dco.ethz.ch:60627/user/Executor#1047985194] with ID 10
+2014-07-23 06:09:13,271 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:7 as TID 7 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,272 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:7 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,275 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node128-mgt.dco.ethz.ch:45118/user/Executor#-124749135] with ID 11
+2014-07-23 06:09:13,276 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:8 as TID 8 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,277 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:8 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,280 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node121-mgt.dco.ethz.ch:37388/user/Executor#-644118922] with ID 9
+2014-07-23 06:09:13,281 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:9 as TID 9 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,282 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:9 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,286 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node127-mgt.dco.ethz.ch:55963/user/Executor#1562325344] with ID 8
+2014-07-23 06:09:13,287 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:10 as TID 10 on executor 8: dco-node127-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,288 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:10 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,291 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node123-mgt.dco.ethz.ch:48759/user/Executor#-1135722432] with ID 3
+2014-07-23 06:09:13,292 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:11 as TID 11 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,293 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:11 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,293 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:12 as TID 12 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,293 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:12 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,294 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node135-mgt.dco.ethz.ch:35768/user/Executor#112874025] with ID 0
+2014-07-23 06:09:13,294 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:13 as TID 13 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,295 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:13 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,296 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:14 as TID 14 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,296 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:14 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,297 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node126-mgt.dco.ethz.ch:45257/user/Executor#85592586] with ID 15
+2014-07-23 06:09:13,300 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:15 as TID 15 on executor 15: dco-node126-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,300 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:15 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,317 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node133-mgt.dco.ethz.ch:42839/user/Executor#140141553] with ID 7
+2014-07-23 06:09:13,319 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:16 as TID 16 on executor 7: dco-node133-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,320 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:16 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,321 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node134-mgt.dco.ethz.ch:41807/user/Executor#-2128576045] with ID 12
+2014-07-23 06:09:13,322 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:17 as TID 17 on executor 12: dco-node134-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,323 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:17 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,357 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node131-mgt.dco.ethz.ch:41064/user/Executor#-1675429283] with ID 6
+2014-07-23 06:09:13,359 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:18 as TID 18 on executor 6: dco-node131-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,360 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:18 as 2026 bytes in 0 ms
+2014-07-23 06:09:13,501 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node132-mgt.dco.ethz.ch:55550/user/Executor#-151862046] with ID 5
+2014-07-23 06:09:13,502 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:19 as TID 19 on executor 5: dco-node132-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:13,503 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:19 as 2026 bytes in 1 ms
+2014-07-23 06:09:13,507 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node125-mgt.dco.ethz.ch:52980 with 40.3 GB RAM
+2014-07-23 06:09:13,515 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node122-mgt.dco.ethz.ch:35229 with 40.3 GB RAM
+2014-07-23 06:09:13,517 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node129-mgt.dco.ethz.ch:39918 with 40.3 GB RAM
+2014-07-23 06:09:13,519 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node124-mgt.dco.ethz.ch:39029 with 40.3 GB RAM
+2014-07-23 06:09:13,520 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node136-mgt.dco.ethz.ch:36897 with 40.3 GB RAM
+2014-07-23 06:09:13,536 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node127-mgt.dco.ethz.ch:49636 with 40.3 GB RAM
+2014-07-23 06:09:13,546 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node123-mgt.dco.ethz.ch:56391 with 40.3 GB RAM
+2014-07-23 06:09:13,551 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node135-mgt.dco.ethz.ch:47421 with 40.3 GB RAM
+2014-07-23 06:09:13,553 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node126-mgt.dco.ethz.ch:59535 with 40.3 GB RAM
+2014-07-23 06:09:13,560 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node128-mgt.dco.ethz.ch:33031 with 40.3 GB RAM
+2014-07-23 06:09:13,569 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node121-mgt.dco.ethz.ch:60179 with 40.3 GB RAM
+2014-07-23 06:09:13,570 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node133-mgt.dco.ethz.ch:47724 with 40.3 GB RAM
+2014-07-23 06:09:13,578 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node134-mgt.dco.ethz.ch:51918 with 40.3 GB RAM
+2014-07-23 06:09:13,614 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node131-mgt.dco.ethz.ch:57518 with 40.3 GB RAM
+2014-07-23 06:09:13,745 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node132-mgt.dco.ethz.ch:43937 with 40.3 GB RAM
+2014-07-23 06:09:16,929 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:20 as TID 20 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:16,930 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:20 as 2026 bytes in 1 ms
+2014-07-23 06:09:16,983 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 0 in 4622 ms on dco-node130-mgt.dco.ethz.ch (progress: 1/81)
+2014-07-23 06:09:16,984 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 0)
+2014-07-23 06:09:17,091 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:21 as TID 21 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:17,092 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:21 as 2026 bytes in 0 ms
+2014-07-23 06:09:17,104 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 9)
+2014-07-23 06:09:17,104 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 9 in 3811 ms on dco-node121-mgt.dco.ethz.ch (progress: 2/81)
+2014-07-23 06:09:18,185 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:22 as TID 22 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:18,186 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:22 as 2026 bytes in 1 ms
+2014-07-23 06:09:18,195 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 20)
+2014-07-23 06:09:18,196 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 20 in 1257 ms on dco-node130-mgt.dco.ethz.ch (progress: 3/81)
+2014-07-23 06:09:18,582 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:23 as TID 23 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:18,582 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:23 as 2026 bytes in 0 ms
+2014-07-23 06:09:18,590 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 21)
+2014-07-23 06:09:18,590 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 21 in 1492 ms on dco-node121-mgt.dco.ethz.ch (progress: 4/81)
+2014-07-23 06:09:19,423 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:24 as TID 24 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:19,424 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:24 as 2026 bytes in 0 ms
+2014-07-23 06:09:19,440 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 22 in 1249 ms on dco-node130-mgt.dco.ethz.ch (progress: 5/81)
+2014-07-23 06:09:19,440 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 22)
+2014-07-23 06:09:19,963 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:25 as TID 25 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:19,964 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:25 as 2026 bytes in 0 ms
+2014-07-23 06:09:19,971 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 23)
+2014-07-23 06:09:19,972 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 23 in 1384 ms on dco-node121-mgt.dco.ethz.ch (progress: 6/81)
+2014-07-23 06:09:20,037 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:26 as TID 26 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:20,038 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:26 as 2026 bytes in 0 ms
+2014-07-23 06:09:20,044 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 7 in 6767 ms on dco-node129-mgt.dco.ethz.ch (progress: 7/81)
+2014-07-23 06:09:20,044 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 7)
+2014-07-23 06:09:20,077 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:27 as TID 27 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:20,077 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:27 as 2026 bytes in 0 ms
+2014-07-23 06:09:20,084 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 8)
+2014-07-23 06:09:20,084 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 8 in 6802 ms on dco-node128-mgt.dco.ethz.ch (progress: 8/81)
+2014-07-23 06:09:20,538 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:28 as TID 28 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:20,539 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:28 as 2026 bytes in 0 ms
+2014-07-23 06:09:20,544 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 4)
+2014-07-23 06:09:20,544 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 4 in 7285 ms on dco-node136-mgt.dco.ethz.ch (progress: 9/81)
+2014-07-23 06:09:20,671 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:29 as TID 29 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:20,671 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:29 as 2026 bytes in 0 ms
+2014-07-23 06:09:20,677 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 24)
+2014-07-23 06:09:20,677 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 24 in 1249 ms on dco-node130-mgt.dco.ethz.ch (progress: 10/81)
+2014-07-23 06:09:21,067 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:30 as TID 30 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,068 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:30 as 2026 bytes in 1 ms
+2014-07-23 06:09:21,073 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 2)
+2014-07-23 06:09:21,073 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 2 in 7818 ms on dco-node125-mgt.dco.ethz.ch (progress: 11/81)
+2014-07-23 06:09:21,104 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:31 as TID 31 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,105 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:31 as 2026 bytes in 1 ms
+2014-07-23 06:09:21,111 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 1)
+2014-07-23 06:09:21,111 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 1 in 7863 ms on dco-node125-mgt.dco.ethz.ch (progress: 12/81)
+2014-07-23 06:09:21,266 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:32 as TID 32 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,267 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:32 as 2026 bytes in 1 ms
+2014-07-23 06:09:21,272 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 25)
+2014-07-23 06:09:21,272 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 25 in 1304 ms on dco-node121-mgt.dco.ethz.ch (progress: 13/81)
+2014-07-23 06:09:21,359 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:33 as TID 33 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,359 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:33 as 2026 bytes in 0 ms
+2014-07-23 06:09:21,364 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 27)
+2014-07-23 06:09:21,364 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 27 in 1284 ms on dco-node128-mgt.dco.ethz.ch (progress: 14/81)
+2014-07-23 06:09:21,380 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:34 as TID 34 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,381 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:34 as 2026 bytes in 0 ms
+2014-07-23 06:09:21,386 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 26)
+2014-07-23 06:09:21,386 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 26 in 1344 ms on dco-node129-mgt.dco.ethz.ch (progress: 15/81)
+2014-07-23 06:09:21,460 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:35 as TID 35 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,461 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:35 as 2026 bytes in 1 ms
+2014-07-23 06:09:21,466 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 3)
+2014-07-23 06:09:21,466 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 3 in 8209 ms on dco-node122-mgt.dco.ethz.ch (progress: 16/81)
+2014-07-23 06:09:21,700 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:36 as TID 36 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,701 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:36 as 2026 bytes in 0 ms
+2014-07-23 06:09:21,706 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 6 in 8437 ms on dco-node124-mgt.dco.ethz.ch (progress: 17/81)
+2014-07-23 06:09:21,706 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 6)
+2014-07-23 06:09:21,813 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:37 as TID 37 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,813 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:37 as 2026 bytes in 0 ms
+2014-07-23 06:09:21,818 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 5 in 8551 ms on dco-node124-mgt.dco.ethz.ch (progress: 18/81)
+2014-07-23 06:09:21,818 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 5)
+2014-07-23 06:09:21,819 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:38 as TID 38 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:21,820 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:38 as 2026 bytes in 1 ms
+2014-07-23 06:09:21,825 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 28)
+2014-07-23 06:09:21,825 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 28 in 1282 ms on dco-node136-mgt.dco.ethz.ch (progress: 19/81)
+2014-07-23 06:09:22,179 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:39 as TID 39 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,180 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:39 as 2026 bytes in 1 ms
+2014-07-23 06:09:22,185 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 29)
+2014-07-23 06:09:22,185 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 29 in 1510 ms on dco-node130-mgt.dco.ethz.ch (progress: 20/81)
+2014-07-23 06:09:22,306 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:40 as TID 40 on executor 8: dco-node127-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,306 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:40 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,312 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 10 in 9020 ms on dco-node127-mgt.dco.ethz.ch (progress: 21/81)
+2014-07-23 06:09:22,312 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 10)
+2014-07-23 06:09:22,352 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:41 as TID 41 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,353 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:41 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,358 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 30 in 1287 ms on dco-node125-mgt.dco.ethz.ch (progress: 22/81)
+2014-07-23 06:09:22,358 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 30)
+2014-07-23 06:09:22,396 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:42 as TID 42 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,396 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:42 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,401 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 31)
+2014-07-23 06:09:22,401 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 31 in 1292 ms on dco-node125-mgt.dco.ethz.ch (progress: 23/81)
+2014-07-23 06:09:22,435 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:43 as TID 43 on executor 7: dco-node133-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,436 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:43 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,440 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 16)
+2014-07-23 06:09:22,440 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 16 in 9118 ms on dco-node133-mgt.dco.ethz.ch (progress: 24/81)
+2014-07-23 06:09:22,577 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:44 as TID 44 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,578 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:44 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,583 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 33)
+2014-07-23 06:09:22,583 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 33 in 1219 ms on dco-node128-mgt.dco.ethz.ch (progress: 25/81)
+2014-07-23 06:09:22,646 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:45 as TID 45 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,647 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:45 as 2026 bytes in 1 ms
+2014-07-23 06:09:22,651 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 34 in 1267 ms on dco-node129-mgt.dco.ethz.ch (progress: 26/81)
+2014-07-23 06:09:22,651 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 34)
+2014-07-23 06:09:22,690 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:46 as TID 46 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,690 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:46 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,695 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 35)
+2014-07-23 06:09:22,695 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 35 in 1230 ms on dco-node122-mgt.dco.ethz.ch (progress: 27/81)
+2014-07-23 06:09:22,748 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:47 as TID 47 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,749 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:47 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,753 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 32 in 1483 ms on dco-node121-mgt.dco.ethz.ch (progress: 28/81)
+2014-07-23 06:09:22,753 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 32)
+2014-07-23 06:09:22,802 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:48 as TID 48 on executor 12: dco-node134-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,802 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:48 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,806 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 17 in 9481 ms on dco-node134-mgt.dco.ethz.ch (progress: 29/81)
+2014-07-23 06:09:22,807 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 17)
+2014-07-23 06:09:22,876 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:49 as TID 49 on executor 5: dco-node132-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,876 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:49 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,880 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 19)
+2014-07-23 06:09:22,880 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 19 in 9374 ms on dco-node132-mgt.dco.ethz.ch (progress: 30/81)
+2014-07-23 06:09:22,925 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:50 as TID 50 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,926 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:50 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,930 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 14)
+2014-07-23 06:09:22,930 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 14 in 9630 ms on dco-node135-mgt.dco.ethz.ch (progress: 31/81)
+2014-07-23 06:09:22,931 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:51 as TID 51 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,931 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:51 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,935 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 13 in 9637 ms on dco-node135-mgt.dco.ethz.ch (progress: 32/81)
+2014-07-23 06:09:22,935 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 13)
+2014-07-23 06:09:22,936 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:52 as TID 52 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,936 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:52 as 2026 bytes in 0 ms
+2014-07-23 06:09:22,940 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 36)
+2014-07-23 06:09:22,940 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 36 in 1237 ms on dco-node124-mgt.dco.ethz.ch (progress: 33/81)
+2014-07-23 06:09:22,985 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:53 as TID 53 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:22,986 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:53 as 2026 bytes in 1 ms
+2014-07-23 06:09:22,990 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 37 in 1174 ms on dco-node124-mgt.dco.ethz.ch (progress: 34/81)
+2014-07-23 06:09:22,990 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 37)
+2014-07-23 06:09:23,065 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:54 as TID 54 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,065 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:54 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,069 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 38 in 1247 ms on dco-node136-mgt.dco.ethz.ch (progress: 35/81)
+2014-07-23 06:09:23,069 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 38)
+2014-07-23 06:09:23,275 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:55 as TID 55 on executor 15: dco-node126-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,277 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:55 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,281 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 15 in 9979 ms on dco-node126-mgt.dco.ethz.ch (progress: 36/81)
+2014-07-23 06:09:23,281 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 15)
+2014-07-23 06:09:23,342 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:56 as TID 56 on executor 6: dco-node131-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,343 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:56 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,347 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 18)
+2014-07-23 06:09:23,347 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 18 in 9984 ms on dco-node131-mgt.dco.ethz.ch (progress: 37/81)
+2014-07-23 06:09:23,425 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:57 as TID 57 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,426 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:57 as 2026 bytes in 1 ms
+2014-07-23 06:09:23,430 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 11)
+2014-07-23 06:09:23,430 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 11 in 10134 ms on dco-node123-mgt.dco.ethz.ch (progress: 38/81)
+2014-07-23 06:09:23,432 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:58 as TID 58 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,433 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:58 as 2026 bytes in 1 ms
+2014-07-23 06:09:23,436 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 12)
+2014-07-23 06:09:23,437 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 12 in 10140 ms on dco-node123-mgt.dco.ethz.ch (progress: 39/81)
+2014-07-23 06:09:23,535 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:59 as TID 59 on executor 8: dco-node127-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,536 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:59 as 2026 bytes in 1 ms
+2014-07-23 06:09:23,540 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 40 in 1231 ms on dco-node127-mgt.dco.ethz.ch (progress: 40/81)
+2014-07-23 06:09:23,540 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 40)
+2014-07-23 06:09:23,637 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:60 as TID 60 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,638 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:60 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,640 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 39 in 1459 ms on dco-node130-mgt.dco.ethz.ch (progress: 41/81)
+2014-07-23 06:09:23,640 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 39)
+2014-07-23 06:09:23,682 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:61 as TID 61 on executor 7: dco-node133-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,683 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:61 as 2026 bytes in 1 ms
+2014-07-23 06:09:23,688 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 43 in 1248 ms on dco-node133-mgt.dco.ethz.ch (progress: 42/81)
+2014-07-23 06:09:23,688 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 43)
+2014-07-23 06:09:23,791 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:62 as TID 62 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,791 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:62 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,795 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 44 in 1215 ms on dco-node128-mgt.dco.ethz.ch (progress: 43/81)
+2014-07-23 06:09:23,795 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 44)
+2014-07-23 06:09:23,921 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:63 as TID 63 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,922 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:63 as 2026 bytes in 1 ms
+2014-07-23 06:09:23,926 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 45 in 1276 ms on dco-node129-mgt.dco.ethz.ch (progress: 44/81)
+2014-07-23 06:09:23,926 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 45)
+2014-07-23 06:09:23,941 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:64 as TID 64 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,941 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:64 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,946 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 41)
+2014-07-23 06:09:23,946 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 41 in 1590 ms on dco-node125-mgt.dco.ethz.ch (progress: 45/81)
+2014-07-23 06:09:23,951 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:65 as TID 65 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,951 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:65 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,956 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 46)
+2014-07-23 06:09:23,956 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 46 in 1262 ms on dco-node122-mgt.dco.ethz.ch (progress: 46/81)
+2014-07-23 06:09:23,962 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:66 as TID 66 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:23,962 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:66 as 2026 bytes in 0 ms
+2014-07-23 06:09:23,966 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 42 in 1567 ms on dco-node125-mgt.dco.ethz.ch (progress: 47/81)
+2014-07-23 06:09:23,966 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 42)
+2014-07-23 06:09:24,047 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:67 as TID 67 on executor 12: dco-node134-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,048 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:67 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,051 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 48)
+2014-07-23 06:09:24,051 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 48 in 1247 ms on dco-node134-mgt.dco.ethz.ch (progress: 48/81)
+2014-07-23 06:09:24,140 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:68 as TID 68 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,140 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:68 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,144 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 50 in 1215 ms on dco-node135-mgt.dco.ethz.ch (progress: 49/81)
+2014-07-23 06:09:24,144 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 50)
+2014-07-23 06:09:24,147 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:69 as TID 69 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,148 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:69 as 2026 bytes in 1 ms
+2014-07-23 06:09:24,154 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 51 in 1219 ms on dco-node135-mgt.dco.ethz.ch (progress: 50/81)
+2014-07-23 06:09:24,154 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 51)
+2014-07-23 06:09:24,155 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:70 as TID 70 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,155 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:70 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,158 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 47 in 1407 ms on dco-node121-mgt.dco.ethz.ch (progress: 51/81)
+2014-07-23 06:09:24,158 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 47)
+2014-07-23 06:09:24,195 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:71 as TID 71 on executor 5: dco-node132-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,195 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:71 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,200 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 49 in 1321 ms on dco-node132-mgt.dco.ethz.ch (progress: 52/81)
+2014-07-23 06:09:24,200 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 49)
+2014-07-23 06:09:24,329 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:72 as TID 72 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,329 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:72 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,333 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 54)
+2014-07-23 06:09:24,333 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 54 in 1266 ms on dco-node136-mgt.dco.ethz.ch (progress: 53/81)
+2014-07-23 06:09:24,343 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:73 as TID 73 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,343 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:73 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,347 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 52 in 1408 ms on dco-node124-mgt.dco.ethz.ch (progress: 54/81)
+2014-07-23 06:09:24,347 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 52)
+2014-07-23 06:09:24,378 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:74 as TID 74 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,379 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:74 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,382 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 53)
+2014-07-23 06:09:24,382 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 53 in 1394 ms on dco-node124-mgt.dco.ethz.ch (progress: 55/81)
+2014-07-23 06:09:24,595 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:75 as TID 75 on executor 15: dco-node126-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,595 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:75 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,598 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 55 in 1320 ms on dco-node126-mgt.dco.ethz.ch (progress: 56/81)
+2014-07-23 06:09:24,598 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 55)
+2014-07-23 06:09:24,599 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:76 as TID 76 on executor 6: dco-node131-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,599 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:76 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,603 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 56)
+2014-07-23 06:09:24,603 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 56 in 1257 ms on dco-node131-mgt.dco.ethz.ch (progress: 57/81)
+2014-07-23 06:09:24,644 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:77 as TID 77 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,644 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:77 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,648 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 58 in 1212 ms on dco-node123-mgt.dco.ethz.ch (progress: 58/81)
+2014-07-23 06:09:24,648 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 58)
+2014-07-23 06:09:24,657 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:78 as TID 78 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,658 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:78 as 2026 bytes in 0 ms
+2014-07-23 06:09:24,660 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 57 in 1233 ms on dco-node123-mgt.dco.ethz.ch (progress: 59/81)
+2014-07-23 06:09:24,660 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 57)
+2014-07-23 06:09:24,748 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:79 as TID 79 on executor 8: dco-node127-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,749 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:79 as 2026 bytes in 1 ms
+2014-07-23 06:09:24,752 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 59 in 1214 ms on dco-node127-mgt.dco.ethz.ch (progress: 60/81)
+2014-07-23 06:09:24,752 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 59)
+2014-07-23 06:09:24,877 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0:80 as TID 80 on executor 7: dco-node133-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:24,878 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 0.0:80 as 2026 bytes in 1 ms
+2014-07-23 06:09:24,881 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 61 in 1196 ms on dco-node133-mgt.dco.ethz.ch (progress: 61/81)
+2014-07-23 06:09:24,881 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 61)
+2014-07-23 06:09:25,097 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 60)
+2014-07-23 06:09:25,097 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 60 in 1457 ms on dco-node130-mgt.dco.ethz.ch (progress: 62/81)
+2014-07-23 06:09:25,221 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 65)
+2014-07-23 06:09:25,222 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 65 in 1268 ms on dco-node122-mgt.dco.ethz.ch (progress: 63/81)
+2014-07-23 06:09:25,230 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 62 in 1438 ms on dco-node128-mgt.dco.ethz.ch (progress: 64/81)
+2014-07-23 06:09:25,231 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 62)
+2014-07-23 06:09:25,297 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 67)
+2014-07-23 06:09:25,297 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 67 in 1247 ms on dco-node134-mgt.dco.ethz.ch (progress: 65/81)
+2014-07-23 06:09:25,350 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 63 in 1426 ms on dco-node129-mgt.dco.ethz.ch (progress: 66/81)
+2014-07-23 06:09:25,350 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 63)
+2014-07-23 06:09:25,455 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 66)
+2014-07-23 06:09:25,455 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 66 in 1492 ms on dco-node125-mgt.dco.ethz.ch (progress: 67/81)
+2014-07-23 06:09:25,499 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 71)
+2014-07-23 06:09:25,499 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 71 in 1302 ms on dco-node132-mgt.dco.ethz.ch (progress: 68/81)
+2014-07-23 06:09:25,523 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 64)
+2014-07-23 06:09:25,523 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 64 in 1580 ms on dco-node125-mgt.dco.ethz.ch (progress: 69/81)
+2014-07-23 06:09:25,558 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 70 in 1402 ms on dco-node121-mgt.dco.ethz.ch (progress: 70/81)
+2014-07-23 06:09:25,558 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 70)
+2014-07-23 06:09:25,572 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 69 in 1423 ms on dco-node135-mgt.dco.ethz.ch (progress: 71/81)
+2014-07-23 06:09:25,572 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 69)
+2014-07-23 06:09:25,575 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 68 in 1433 ms on dco-node135-mgt.dco.ethz.ch (progress: 72/81)
+2014-07-23 06:09:25,575 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 68)
+2014-07-23 06:09:25,674 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 73 in 1330 ms on dco-node124-mgt.dco.ethz.ch (progress: 73/81)
+2014-07-23 06:09:25,674 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 73)
+2014-07-23 06:09:25,714 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 74 in 1333 ms on dco-node124-mgt.dco.ethz.ch (progress: 74/81)
+2014-07-23 06:09:25,714 [spark-akka.actor.default-dispatcher-20] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 74)
+2014-07-23 06:09:25,769 [spark-akka.actor.default-dispatcher-20] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 72)
+2014-07-23 06:09:25,769 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 72 in 1438 ms on dco-node136-mgt.dco.ethz.ch (progress: 75/81)
+2014-07-23 06:09:25,835 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 76 in 1235 ms on dco-node131-mgt.dco.ethz.ch (progress: 76/81)
+2014-07-23 06:09:25,835 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 76)
+2014-07-23 06:09:25,851 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 75)
+2014-07-23 06:09:25,851 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 75 in 1255 ms on dco-node126-mgt.dco.ethz.ch (progress: 77/81)
+2014-07-23 06:09:25,945 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 79 in 1195 ms on dco-node127-mgt.dco.ethz.ch (progress: 78/81)
+2014-07-23 06:09:25,945 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 79)
+2014-07-23 06:09:26,052 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 78 in 1393 ms on dco-node123-mgt.dco.ethz.ch (progress: 79/81)
+2014-07-23 06:09:26,052 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 78)
+2014-07-23 06:09:26,055 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 77 in 1409 ms on dco-node123-mgt.dco.ethz.ch (progress: 80/81)
+2014-07-23 06:09:26,056 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 77)
+2014-07-23 06:09:26,131 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 80 in 1252 ms on dco-node133-mgt.dco.ethz.ch (progress: 81/81)
+2014-07-23 06:09:26,131 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(0, 80)
+2014-07-23 06:09:26,133 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2014-07-23 06:09:26,133 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Stage 0 (collect at RemoveInfrequentWordsApp.scala:51) finished in 500.020 s
+2014-07-23 06:09:26,146 [main] INFO  org.apache.spark.SparkContext - Job finished: collect at RemoveInfrequentWordsApp.scala:51, took 500.191826532 s
+2014-07-23 06:09:26,473 [main] INFO  org.apache.spark.SparkContext - Starting job: foreach at RemoveInfrequentWordsApp.scala:27
+2014-07-23 06:09:26,475 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (foreach at RemoveInfrequentWordsApp.scala:27) with 20 output partitions (allowLocal=false)
+2014-07-23 06:09:26,475 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: Stage 1(foreach at RemoveInfrequentWordsApp.scala:27)
+2014-07-23 06:09:26,475 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2014-07-23 06:09:26,477 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2014-07-23 06:09:26,477 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting Stage 1 (ParallelCollectionRDD[6] at parallelize at RemoveInfrequentWordsApp.scala:27), which has no missing parents
+2014-07-23 06:09:26,794 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 20 missing tasks from Stage 1 (ParallelCollectionRDD[6] at parallelize at RemoveInfrequentWordsApp.scala:27)
+2014-07-23 06:09:26,794 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 20 tasks
+2014-07-23 06:09:26,795 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:0 as TID 81 on executor 15: dco-node126-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,799 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:0 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,799 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:1 as TID 82 on executor 10: dco-node129-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,802 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:1 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,802 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:2 as TID 83 on executor 8: dco-node127-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,805 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:2 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,806 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:3 as TID 84 on executor 6: dco-node131-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,809 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:3 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,809 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:4 as TID 85 on executor 14: dco-node136-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,812 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:4 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,812 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:5 as TID 86 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,815 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:5 as 332845 bytes in 2 ms
+2014-07-23 06:09:26,815 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:6 as TID 87 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,818 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:6 as 332845 bytes in 2 ms
+2014-07-23 06:09:26,819 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:7 as TID 88 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,821 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:7 as 332845 bytes in 2 ms
+2014-07-23 06:09:26,821 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:8 as TID 89 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,824 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:8 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,824 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:9 as TID 90 on executor 7: dco-node133-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,827 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:9 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,827 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:10 as TID 91 on executor 5: dco-node132-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,830 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:10 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,830 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:11 as TID 92 on executor 11: dco-node128-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,833 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:11 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,833 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:12 as TID 93 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,837 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:12 as 332845 bytes in 4 ms
+2014-07-23 06:09:26,838 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:13 as TID 94 on executor 9: dco-node121-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,841 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:13 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,841 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:14 as TID 95 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,845 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:14 as 332845 bytes in 4 ms
+2014-07-23 06:09:26,846 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:15 as TID 96 on executor 12: dco-node134-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,849 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:15 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,849 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:16 as TID 97 on executor 0: dco-node135-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,853 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:16 as 332845 bytes in 4 ms
+2014-07-23 06:09:26,853 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:17 as TID 98 on executor 2: dco-node124-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,856 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:17 as 332845 bytes in 3 ms
+2014-07-23 06:09:26,856 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:18 as TID 99 on executor 3: dco-node123-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,861 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:18 as 332845 bytes in 4 ms
+2014-07-23 06:09:26,861 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:19 as TID 100 on executor 1: dco-node125-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 06:09:26,867 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:19 as 332845 bytes in 5 ms
+2014-07-23 06:11:15,717 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 5)
+2014-07-23 06:11:15,717 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 86 in 108902 ms on dco-node135-mgt.dco.ethz.ch (progress: 1/20)
+2014-07-23 06:11:22,740 [spark-akka.actor.default-dispatcher-26] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 6)
+2014-07-23 06:11:22,740 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 87 in 115923 ms on dco-node122-mgt.dco.ethz.ch (progress: 2/20)
+2014-07-23 06:11:25,679 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 95 in 118836 ms on dco-node130-mgt.dco.ethz.ch (progress: 3/20)
+2014-07-23 06:11:25,679 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 14)
+2014-07-23 06:11:27,897 [spark-akka.actor.default-dispatcher-26] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 13)
+2014-07-23 06:11:27,897 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 94 in 121057 ms on dco-node121-mgt.dco.ethz.ch (progress: 4/20)
+2014-07-23 06:11:40,942 [spark-akka.actor.default-dispatcher-21] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 7)
+2014-07-23 06:11:40,942 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 88 in 134121 ms on dco-node124-mgt.dco.ethz.ch (progress: 5/20)
+2014-07-23 06:11:44,247 [spark-akka.actor.default-dispatcher-20] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 19)
+2014-07-23 06:11:44,247 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 100 in 137383 ms on dco-node125-mgt.dco.ethz.ch (progress: 6/20)
+2014-07-23 06:11:45,154 [spark-akka.actor.default-dispatcher-26] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 16)
+2014-07-23 06:11:45,154 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 97 in 138302 ms on dco-node135-mgt.dco.ethz.ch (progress: 7/20)
+2014-07-23 06:11:47,854 [spark-akka.actor.default-dispatcher-19] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 17)
+2014-07-23 06:11:47,854 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 98 in 140999 ms on dco-node124-mgt.dco.ethz.ch (progress: 8/20)
+2014-07-23 06:12:00,704 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 96 in 153855 ms on dco-node134-mgt.dco.ethz.ch (progress: 9/20)
+2014-07-23 06:12:00,704 [spark-akka.actor.default-dispatcher-31] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 15)
+2014-07-23 06:12:01,577 [spark-akka.actor.default-dispatcher-32] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 10)
+2014-07-23 06:12:01,577 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 91 in 154748 ms on dco-node132-mgt.dco.ethz.ch (progress: 10/20)
+2014-07-23 06:12:04,018 [spark-akka.actor.default-dispatcher-26] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 9)
+2014-07-23 06:12:04,018 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 90 in 157191 ms on dco-node133-mgt.dco.ethz.ch (progress: 11/20)
+2014-07-23 06:12:06,471 [spark-akka.actor.default-dispatcher-21] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 12)
+2014-07-23 06:12:06,471 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 93 in 159636 ms on dco-node125-mgt.dco.ethz.ch (progress: 12/20)
+2014-07-23 06:12:12,341 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 11)
+2014-07-23 06:12:12,341 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 92 in 165508 ms on dco-node128-mgt.dco.ethz.ch (progress: 13/20)
+2014-07-23 06:12:15,703 [spark-akka.actor.default-dispatcher-26] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 8)
+2014-07-23 06:12:15,703 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 89 in 168879 ms on dco-node123-mgt.dco.ethz.ch (progress: 14/20)
+2014-07-23 06:12:16,590 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 99 in 169731 ms on dco-node123-mgt.dco.ethz.ch (progress: 15/20)
+2014-07-23 06:12:16,590 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 18)
+2014-07-23 06:12:25,457 [spark-akka.actor.default-dispatcher-13] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 4)
+2014-07-23 06:12:25,457 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 85 in 178645 ms on dco-node136-mgt.dco.ethz.ch (progress: 16/20)
+2014-07-23 06:13:10,284 [spark-akka.actor.default-dispatcher-32] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 1)
+2014-07-23 06:13:10,284 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 82 in 223482 ms on dco-node129-mgt.dco.ethz.ch (progress: 17/20)
+2014-07-23 06:13:11,743 [spark-akka.actor.default-dispatcher-31] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 2)
+2014-07-23 06:13:11,743 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 83 in 224939 ms on dco-node127-mgt.dco.ethz.ch (progress: 18/20)
+2014-07-23 06:13:13,243 [spark-akka.actor.default-dispatcher-28] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 3)
+2014-07-23 06:13:13,243 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 84 in 226435 ms on dco-node131-mgt.dco.ethz.ch (progress: 19/20)
+2014-07-23 06:13:41,895 [spark-akka.actor.default-dispatcher-31] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 0)
+2014-07-23 06:13:41,895 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 81 in 255098 ms on dco-node126-mgt.dco.ethz.ch (progress: 20/20)
+2014-07-23 06:13:41,898 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2014-07-23 06:13:41,898 [spark-akka.actor.default-dispatcher-31] INFO  org.apache.spark.scheduler.DAGScheduler - Stage 1 (foreach at RemoveInfrequentWordsApp.scala:27) finished in 255.103 s
+2014-07-23 06:13:41,899 [main] INFO  org.apache.spark.SparkContext - Job finished: foreach at RemoveInfrequentWordsApp.scala:27, took 255.42495905 s
