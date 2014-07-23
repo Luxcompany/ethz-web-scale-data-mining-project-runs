@@ -1,0 +1,94 @@
+Spark assembly has been built with Hive, including Datanucleus jars on classpath
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+2014-07-23 04:28:08,741 [main] WARN  org.apache.spark.SparkConf - 
+SPARK_JAVA_OPTS was detected (set to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with conf/spark-defaults.conf to set defaults for an application
+ - ./spark-submit with --driver-java-options to set -X options for a driver
+ - spark.executor.extraJavaOptions to set -X options for executors
+ - SPARK_DAEMON_JAVA_OPTS to set java options for standalone daemons (master or worker)
+        
+2014-07-23 04:28:08,743 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.executor.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
+2014-07-23 04:28:08,743 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.driver.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
+2014-07-23 04:28:08,799 [main] INFO  org.apache.spark.SecurityManager - Changing view acls to: root
+2014-07-23 04:28:08,799 [main] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root)
+2014-07-23 04:28:09,236 [spark-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2014-07-23 04:28:09,291 [spark-akka.actor.default-dispatcher-4] INFO  Remoting - Starting remoting
+2014-07-23 04:28:09,475 [spark-akka.actor.default-dispatcher-2] INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:54913]
+2014-07-23 04:28:09,477 [spark-akka.actor.default-dispatcher-4] INFO  Remoting - Remoting now listens on addresses: [akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:54913]
+2014-07-23 04:28:09,507 [main] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2014-07-23 04:28:09,510 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2014-07-23 04:28:09,529 [main] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/spark-local-20140723042809-dfb6
+2014-07-23 04:28:09,533 [main] INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 40.3 GB.
+2014-07-23 04:28:09,563 [main] INFO  org.apache.spark.network.ConnectionManager - Bound socket to port 41767 with id = ConnectionManagerId(dco-node121-mgt.dco.ethz.ch,41767)
+2014-07-23 04:28:09,567 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+2014-07-23 04:28:09,570 [spark-akka.actor.default-dispatcher-6] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node121-mgt.dco.ethz.ch:41767 with 40.3 GB RAM
+2014-07-23 04:28:09,572 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+2014-07-23 04:28:09,586 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
+2014-07-23 04:28:09,644 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 04:28:09,665 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:36892
+2014-07-23 04:28:09,665 [main] INFO  org.apache.spark.broadcast.HttpBroadcast - Broadcast server started at http://172.31.109.131:36892
+2014-07-23 04:28:09,672 [main] INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-af2dbe41-b076-4c57-9c29-4db0cee13de3
+2014-07-23 04:28:09,672 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
+2014-07-23 04:28:09,673 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 04:28:09,676 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:47147
+2014-07-23 04:28:10,035 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 04:28:10,053 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+2014-07-23 04:28:10,060 [main] INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://dco-node121-mgt.dco.ethz.ch:4040
+2014-07-23 04:28:10,288 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Exception in thread "main" org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.FSLimitException$PathComponentTooLongException): The maximum path component name limit of remove-infrequent-words--maxwordcount=2147483647,-minwordcount=2500,-output=hdfs---dco-node121.dco.ethz.ch-54310-cw-combined-pruned,-inputcombined=hdfs---dco-node121.dco.ethz.ch-54310-cw-combined,-inputwordcount=hdfs---dco-node121.dco.ethz.ch-54310-cw-wordcount-wordcounts.txt-1406082490392 in directory /spark_event_log is exceeded: limit=255 length=290
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.verifyMaxComponentLength(FSDirectory.java:2201)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.addChild(FSDirectory.java:2275)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.unprotectedMkdir(FSDirectory.java:2045)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.mkdirs(FSDirectory.java:1997)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInternal(FSNamesystem.java:3607)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInt(FSNamesystem.java:3566)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs(FSNamesystem.java:3540)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.mkdirs(NameNodeRpcServer.java:754)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.mkdirs(ClientNamenodeProtocolServerSideTranslatorPB.java:558)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2013)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2009)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2007)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1347)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy8.mkdirs(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:186)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy8.mkdirs(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.mkdirs(ClientNamenodeProtocolTranslatorPB.java:467)
+	at org.apache.hadoop.hdfs.DFSClient.primitiveMkdir(DFSClient.java:2394)
+	at org.apache.hadoop.hdfs.DFSClient.mkdirs(DFSClient.java:2365)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$16.doCall(DistributedFileSystem.java:817)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$16.doCall(DistributedFileSystem.java:813)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.mkdirsInternal(DistributedFileSystem.java:813)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.mkdirs(DistributedFileSystem.java:806)
+	at org.apache.hadoop.fs.FileSystem.mkdirs(FileSystem.java:1933)
+	at org.apache.spark.util.FileLogger.createLogDir(FileLogger.scala:87)
+	at org.apache.spark.util.FileLogger.start(FileLogger.scala:70)
+	at org.apache.spark.scheduler.EventLoggingListener.start(EventLoggingListener.scala:71)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:252)
+	at RemoveInfrequentWordsApp$.createSparkContext(RemoveInfrequentWordsApp.scala:93)
+	at RemoveInfrequentWordsApp$.main(RemoveInfrequentWordsApp.scala:15)
+	at RemoveInfrequentWordsApp.main(RemoveInfrequentWordsApp.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.spark.deploy.SparkSubmit$.launch(SparkSubmit.scala:292)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:55)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
