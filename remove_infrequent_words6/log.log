@@ -3,9 +3,9 @@ Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128m; sup
 =====================================
 Remove Infrequent Words Configuration
 -------------------------------------
-maxWordCount=2147483647, minWordCount=10000, output=hdfs://dco-node121.dco.ethz.ch:54310/cw-combined-pruned-10000, inputCombined=hdfs://dco-node121.dco.ethz.ch:54310/cw-combined-pruned-2500, inputWordcount=hdfs://dco-node121.dco.ethz.ch:54310/cw-wordcount/wordcounts.txt
+maxWordCount=2147483647, minWordCount=20000, output=hdfs://dco-node121.dco.ethz.ch:54310/cw-combined-pruned-20000, inputCombined=hdfs://dco-node121.dco.ethz.ch:54310/cw-combined-pruned-5000, inputWordcount=hdfs://dco-node121.dco.ethz.ch:54310/cw-wordcount/wordcounts.txt
 =====================================
-2014-07-23 05:13:43,971 [main] WARN  org.apache.spark.SparkConf - 
+2014-07-23 05:21:05,164 [main] WARN  org.apache.spark.SparkConf - 
 SPARK_JAVA_OPTS was detected (set to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000').
 This is deprecated in Spark 1.0+.
 
@@ -15,230 +15,238 @@ Please instead use:
  - spark.executor.extraJavaOptions to set -X options for executors
  - SPARK_DAEMON_JAVA_OPTS to set java options for standalone daemons (master or worker)
         
-2014-07-23 05:13:43,973 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.executor.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
-2014-07-23 05:13:43,974 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.driver.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
-2014-07-23 05:13:44,029 [main] INFO  org.apache.spark.SecurityManager - Changing view acls to: root
-2014-07-23 05:13:44,029 [main] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root)
-2014-07-23 05:13:44,468 [spark-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-2014-07-23 05:13:44,524 [spark-akka.actor.default-dispatcher-3] INFO  Remoting - Starting remoting
-2014-07-23 05:13:44,705 [spark-akka.actor.default-dispatcher-2] INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:39330]
-2014-07-23 05:13:44,708 [spark-akka.actor.default-dispatcher-3] INFO  Remoting - Remoting now listens on addresses: [akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:39330]
-2014-07-23 05:13:44,742 [main] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
-2014-07-23 05:13:44,745 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
-2014-07-23 05:13:44,762 [main] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/spark-local-20140723051344-7898
-2014-07-23 05:13:44,767 [main] INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 40.3 GB.
-2014-07-23 05:13:44,796 [main] INFO  org.apache.spark.network.ConnectionManager - Bound socket to port 49044 with id = ConnectionManagerId(dco-node121-mgt.dco.ethz.ch,49044)
-2014-07-23 05:13:44,801 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
-2014-07-23 05:13:44,806 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node121-mgt.dco.ethz.ch:49044 with 40.3 GB RAM
-2014-07-23 05:13:44,808 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
-2014-07-23 05:13:44,825 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
-2014-07-23 05:13:44,885 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
-2014-07-23 05:13:44,905 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:42969
-2014-07-23 05:13:44,905 [main] INFO  org.apache.spark.broadcast.HttpBroadcast - Broadcast server started at http://172.31.109.131:42969
-2014-07-23 05:13:44,912 [main] INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-2305596c-fb5b-4317-9647-71d4a9025da2
-2014-07-23 05:13:44,912 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
-2014-07-23 05:13:44,913 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
-2014-07-23 05:13:44,915 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:45442
-2014-07-23 05:13:45,266 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
-2014-07-23 05:13:45,282 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED SelectChannelConnector@0.0.0.0:4040: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:414)
-	at sun.nio.ch.Net.bind(Net.java:406)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply$mcV$sp(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at scala.util.Try$.apply(Try.scala:161)
-	at org.apache.spark.ui.JettyUtils$.connect$1(JettyUtils.scala:191)
-	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:205)
-	at org.apache.spark.ui.WebUI.bind(WebUI.scala:99)
-	at org.apache.spark.SparkContext.<init>(SparkContext.scala:223)
-	at RemoveInfrequentWordsApp$.createSparkContext(RemoveInfrequentWordsApp.scala:99)
-	at RemoveInfrequentWordsApp$.main(RemoveInfrequentWordsApp.scala:15)
-	at RemoveInfrequentWordsApp.main(RemoveInfrequentWordsApp.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.spark.deploy.SparkSubmit$.launch(SparkSubmit.scala:292)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:55)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-2014-07-23 05:13:45,287 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED org.eclipse.jetty.server.Server@10ded6a9: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:414)
-	at sun.nio.ch.Net.bind(Net.java:406)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply$mcV$sp(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at scala.util.Try$.apply(Try.scala:161)
-	at org.apache.spark.ui.JettyUtils$.connect$1(JettyUtils.scala:191)
-	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:205)
-	at org.apache.spark.ui.WebUI.bind(WebUI.scala:99)
-	at org.apache.spark.SparkContext.<init>(SparkContext.scala:223)
-	at RemoveInfrequentWordsApp$.createSparkContext(RemoveInfrequentWordsApp.scala:99)
-	at RemoveInfrequentWordsApp$.main(RemoveInfrequentWordsApp.scala:15)
-	at RemoveInfrequentWordsApp.main(RemoveInfrequentWordsApp.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.spark.deploy.SparkSubmit$.launch(SparkSubmit.scala:292)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:55)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-2014-07-23 05:13:45,292 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/metrics/json,null}
-2014-07-23 05:13:45,292 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage/kill,null}
-2014-07-23 05:13:45,293 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/,null}
-2014-07-23 05:13:45,293 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/static,null}
-2014-07-23 05:13:45,293 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/executors/json,null}
-2014-07-23 05:13:45,294 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/executors,null}
-2014-07-23 05:13:45,294 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/environment/json,null}
-2014-07-23 05:13:45,294 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/environment,null}
-2014-07-23 05:13:45,295 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/rdd/json,null}
-2014-07-23 05:13:45,295 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/rdd,null}
-2014-07-23 05:13:45,295 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/json,null}
-2014-07-23 05:13:45,295 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage,null}
-2014-07-23 05:13:45,296 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/pool/json,null}
-2014-07-23 05:13:45,296 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/pool,null}
-2014-07-23 05:13:45,296 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage/json,null}
-2014-07-23 05:13:45,297 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage,null}
-2014-07-23 05:13:45,297 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/json,null}
-2014-07-23 05:13:45,297 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages,null}
-2014-07-23 05:13:45,351 [main] INFO  org.apache.spark.ui.JettyUtils - Failed to create UI at port, 4040. Trying again.
-2014-07-23 05:13:45,352 [main] INFO  org.apache.spark.ui.JettyUtils - Error was: Failure(java.net.BindException: Address already in use)
-2014-07-23 05:13:45,354 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
-2014-07-23 05:13:45,367 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED SelectChannelConnector@0.0.0.0:4041: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:414)
-	at sun.nio.ch.Net.bind(Net.java:406)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply$mcV$sp(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at scala.util.Try$.apply(Try.scala:161)
-	at org.apache.spark.ui.JettyUtils$.connect$1(JettyUtils.scala:191)
-	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:205)
-	at org.apache.spark.ui.WebUI.bind(WebUI.scala:99)
-	at org.apache.spark.SparkContext.<init>(SparkContext.scala:223)
-	at RemoveInfrequentWordsApp$.createSparkContext(RemoveInfrequentWordsApp.scala:99)
-	at RemoveInfrequentWordsApp$.main(RemoveInfrequentWordsApp.scala:15)
-	at RemoveInfrequentWordsApp.main(RemoveInfrequentWordsApp.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.spark.deploy.SparkSubmit$.launch(SparkSubmit.scala:292)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:55)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-2014-07-23 05:13:45,368 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED org.eclipse.jetty.server.Server@2ceb80a1: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:414)
-	at sun.nio.ch.Net.bind(Net.java:406)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply$mcV$sp(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at org.apache.spark.ui.JettyUtils$$anonfun$1.apply(JettyUtils.scala:192)
-	at scala.util.Try$.apply(Try.scala:161)
-	at org.apache.spark.ui.JettyUtils$.connect$1(JettyUtils.scala:191)
-	at org.apache.spark.ui.JettyUtils$.startJettyServer(JettyUtils.scala:205)
-	at org.apache.spark.ui.WebUI.bind(WebUI.scala:99)
-	at org.apache.spark.SparkContext.<init>(SparkContext.scala:223)
-	at RemoveInfrequentWordsApp$.createSparkContext(RemoveInfrequentWordsApp.scala:99)
-	at RemoveInfrequentWordsApp$.main(RemoveInfrequentWordsApp.scala:15)
-	at RemoveInfrequentWordsApp.main(RemoveInfrequentWordsApp.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.spark.deploy.SparkSubmit$.launch(SparkSubmit.scala:292)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:55)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-2014-07-23 05:13:45,370 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/metrics/json,null}
-2014-07-23 05:13:45,370 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage/kill,null}
-2014-07-23 05:13:45,371 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/,null}
-2014-07-23 05:13:45,371 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/static,null}
-2014-07-23 05:13:45,371 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/executors/json,null}
-2014-07-23 05:13:45,371 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/executors,null}
-2014-07-23 05:13:45,371 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/environment/json,null}
-2014-07-23 05:13:45,372 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/environment,null}
-2014-07-23 05:13:45,372 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/rdd/json,null}
-2014-07-23 05:13:45,372 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/rdd,null}
-2014-07-23 05:13:45,372 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage/json,null}
-2014-07-23 05:13:45,372 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/storage,null}
-2014-07-23 05:13:45,373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/pool/json,null}
-2014-07-23 05:13:45,373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/pool,null}
-2014-07-23 05:13:45,373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage/json,null}
-2014-07-23 05:13:45,373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/stage,null}
-2014-07-23 05:13:45,373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages/json,null}
-2014-07-23 05:13:45,374 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/stages,null}
-2014-07-23 05:13:45,430 [main] INFO  org.apache.spark.ui.JettyUtils - Failed to create UI at port, 4041. Trying again.
-2014-07-23 05:13:45,430 [main] INFO  org.apache.spark.ui.JettyUtils - Error was: Failure(java.net.BindException: Address already in use)
-2014-07-23 05:13:45,432 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
-2014-07-23 05:13:45,450 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4042
-2014-07-23 05:13:45,457 [main] INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://dco-node121-mgt.dco.ethz.ch:4042
-2014-07-23 05:13:45,682 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2014-07-23 05:13:46,412 [main] INFO  org.apache.spark.scheduler.EventLoggingListener - Logging events to hdfs://dco-node121.dco.ethz.ch:54310/spark_event_log/remove-infrequent-words-1406085225783
-2014-07-23 05:13:47,852 [main] INFO  org.apache.spark.SparkContext - Added JAR file:/disk3/user_work/runs/remove_infrequent_words5/run.jar at http://172.31.109.131:45442/jars/run.jar with timestamp 1406085227851
-2014-07-23 05:13:47,913 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Connecting to master spark://dco-node121.dco.ethz.ch:7077...
-2014-07-23 05:13:48,185 [main] INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(231905) called with curMem=0, maxMem=43218213273
-2014-07-23 05:13:48,190 [main] INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values to memory (estimated size 226.5 KB, free 40.2 GB)
-2014-07-23 05:13:48,275 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Connected to Spark cluster with app ID app-20140723051348-0006
-2014-07-23 05:13:48,454 [main] INFO  org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
-2014-07-23 05:13:48,499 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.146:50010
-2014-07-23 05:13:48,500 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.135:50010
-2014-07-23 05:13:48,500 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.133:50010
-2014-07-23 05:13:48,500 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.139:50010
-2014-07-23 05:13:48,500 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.142:50010
-2014-07-23 05:13:48,508 [main] INFO  org.apache.spark.SparkContext - Starting job: take at RemoveInfrequentWordsApp.scala:46
-2014-07-23 05:13:48,523 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 0 (take at RemoveInfrequentWordsApp.scala:46) with 1 output partitions (allowLocal=true)
-2014-07-23 05:13:48,524 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: Stage 0(take at RemoveInfrequentWordsApp.scala:46)
-2014-07-23 05:13:48,524 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
-2014-07-23 05:13:48,543 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
-2014-07-23 05:13:48,544 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Computing the requested partition locally
-2014-07-23 05:13:48,552 [Local computation of job 0] INFO  org.apache.spark.rdd.HadoopRDD - Input split: hdfs://dco-node121.dco.ethz.ch:54310/cw-wordcount/wordcounts.txt:0+16777216
-2014-07-23 05:13:48,558 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
-2014-07-23 05:13:48,558 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
-2014-07-23 05:13:48,558 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
-2014-07-23 05:13:48,558 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
-2014-07-23 05:13:48,558 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.id is deprecated. Instead, use mapreduce.job.id
-2014-07-23 05:13:48,659 [main] INFO  org.apache.spark.SparkContext - Job finished: take at RemoveInfrequentWordsApp.scala:46, took 0.150974429 s
-2014-07-23 05:13:48,940 [main] INFO  org.apache.spark.SparkContext - Starting job: foreach at RemoveInfrequentWordsApp.scala:27
-2014-07-23 05:13:48,943 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (foreach at RemoveInfrequentWordsApp.scala:27) with 20 output partitions (allowLocal=false)
-2014-07-23 05:13:48,943 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: Stage 1(foreach at RemoveInfrequentWordsApp.scala:27)
-2014-07-23 05:13:48,944 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
-2014-07-23 05:13:48,947 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
-2014-07-23 05:13:48,954 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting Stage 1 (ParallelCollectionRDD[2] at parallelize at RemoveInfrequentWordsApp.scala:27), which has no missing parents
-2014-07-23 05:13:49,068 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 20 missing tasks from Stage 1 (ParallelCollectionRDD[2] at parallelize at RemoveInfrequentWordsApp.scala:27)
-2014-07-23 05:13:49,070 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 20 tasks
+2014-07-23 05:21:05,165 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.executor.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
+2014-07-23 05:21:05,166 [main] WARN  org.apache.spark.SparkConf - Setting 'spark.driver.extraJavaOptions' to '-Xms4g -Xmx70g  -Dspark.akka.frameSize=2000' as a work-around.
+2014-07-23 05:21:05,222 [main] INFO  org.apache.spark.SecurityManager - Changing view acls to: root
+2014-07-23 05:21:05,222 [main] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root)
+2014-07-23 05:21:05,667 [spark-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2014-07-23 05:21:05,724 [spark-akka.actor.default-dispatcher-3] INFO  Remoting - Starting remoting
+2014-07-23 05:21:05,928 [spark-akka.actor.default-dispatcher-5] INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:48455]
+2014-07-23 05:21:05,931 [spark-akka.actor.default-dispatcher-2] INFO  Remoting - Remoting now listens on addresses: [akka.tcp://spark@dco-node121-mgt.dco.ethz.ch:48455]
+2014-07-23 05:21:05,960 [main] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2014-07-23 05:21:05,963 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2014-07-23 05:21:05,980 [main] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/spark-local-20140723052105-b730
+2014-07-23 05:21:05,985 [main] INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 40.3 GB.
+2014-07-23 05:21:06,014 [main] INFO  org.apache.spark.network.ConnectionManager - Bound socket to port 55271 with id = ConnectionManagerId(dco-node121-mgt.dco.ethz.ch,55271)
+2014-07-23 05:21:06,019 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+2014-07-23 05:21:06,022 [spark-akka.actor.default-dispatcher-6] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node121-mgt.dco.ethz.ch:55271 with 40.3 GB RAM
+2014-07-23 05:21:06,024 [main] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+2014-07-23 05:21:06,040 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
+2014-07-23 05:21:06,098 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 05:21:06,118 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:33485
+2014-07-23 05:21:06,119 [main] INFO  org.apache.spark.broadcast.HttpBroadcast - Broadcast server started at http://172.31.109.131:33485
+2014-07-23 05:21:06,125 [main] INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-f9881740-9038-4690-9524-ff74b891d866
+2014-07-23 05:21:06,126 [main] INFO  org.apache.spark.HttpServer - Starting HTTP Server
+2014-07-23 05:21:06,126 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 05:21:06,129 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:42769
+2014-07-23 05:21:06,484 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+2014-07-23 05:21:06,505 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+2014-07-23 05:21:06,510 [main] INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://dco-node121-mgt.dco.ethz.ch:4040
+2014-07-23 05:21:06,734 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-07-23 05:21:07,392 [main] INFO  org.apache.spark.scheduler.EventLoggingListener - Logging events to hdfs://dco-node121.dco.ethz.ch:54310/spark_event_log/remove-infrequent-words-1406085666830
+2014-07-23 05:21:07,654 [main] INFO  org.apache.spark.SparkContext - Added JAR file:/disk3/user_work/runs/remove_infrequent_words6/run.jar at http://172.31.109.131:42769/jars/run.jar with timestamp 1406085667653
+2014-07-23 05:21:07,716 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Connecting to master spark://dco-node121.dco.ethz.ch:7077...
+2014-07-23 05:21:07,969 [main] INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(231905) called with curMem=0, maxMem=43218213273
+2014-07-23 05:21:07,972 [main] INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values to memory (estimated size 226.5 KB, free 40.2 GB)
+2014-07-23 05:21:08,057 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Connected to Spark cluster with app ID app-20140723052108-0007
+2014-07-23 05:21:08,248 [main] INFO  org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+2014-07-23 05:21:08,295 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.135:50010
+2014-07-23 05:21:08,295 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.133:50010
+2014-07-23 05:21:08,296 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.146:50010
+2014-07-23 05:21:08,296 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.139:50010
+2014-07-23 05:21:08,296 [main] INFO  org.apache.hadoop.net.NetworkTopology - Adding a new node: /default-rack/172.31.109.142:50010
+2014-07-23 05:21:08,303 [main] INFO  org.apache.spark.SparkContext - Starting job: take at RemoveInfrequentWordsApp.scala:46
+2014-07-23 05:21:08,316 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 0 (take at RemoveInfrequentWordsApp.scala:46) with 1 output partitions (allowLocal=true)
+2014-07-23 05:21:08,317 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: Stage 0(take at RemoveInfrequentWordsApp.scala:46)
+2014-07-23 05:21:08,317 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2014-07-23 05:21:08,332 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2014-07-23 05:21:08,333 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Computing the requested partition locally
+2014-07-23 05:21:08,341 [Local computation of job 0] INFO  org.apache.spark.rdd.HadoopRDD - Input split: hdfs://dco-node121.dco.ethz.ch:54310/cw-wordcount/wordcounts.txt:0+16777216
+2014-07-23 05:21:08,346 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2014-07-23 05:21:08,346 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2014-07-23 05:21:08,346 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2014-07-23 05:21:08,346 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2014-07-23 05:21:08,347 [Local computation of job 0] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2014-07-23 05:21:08,462 [main] INFO  org.apache.spark.SparkContext - Job finished: take at RemoveInfrequentWordsApp.scala:46, took 0.158445947 s
+2014-07-23 05:21:08,796 [main] INFO  org.apache.spark.SparkContext - Starting job: foreach at RemoveInfrequentWordsApp.scala:27
+2014-07-23 05:21:08,798 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (foreach at RemoveInfrequentWordsApp.scala:27) with 20 output partitions (allowLocal=false)
+2014-07-23 05:21:08,798 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: Stage 1(foreach at RemoveInfrequentWordsApp.scala:27)
+2014-07-23 05:21:08,799 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2014-07-23 05:21:08,801 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2014-07-23 05:21:08,806 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting Stage 1 (ParallelCollectionRDD[2] at parallelize at RemoveInfrequentWordsApp.scala:27), which has no missing parents
+2014-07-23 05:21:08,963 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 20 missing tasks from Stage 1 (ParallelCollectionRDD[2] at parallelize at RemoveInfrequentWordsApp.scala:27)
+2014-07-23 05:21:08,965 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 20 tasks
+2014-07-23 05:21:23,975 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:21:38,975 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:21:53,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:22:08,975 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:22:23,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:22:38,975 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:22:53,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:23:08,975 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:23:23,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:23:38,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:23:53,974 [Timer-0] WARN  org.apache.spark.scheduler.TaskSchedulerImpl - Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient memory
+2014-07-23 05:23:54,772 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/0 on worker-20140722232232-dco-node135-mgt.dco.ethz.ch-56045 (dco-node135-mgt.dco.ethz.ch:56045) with 16 cores
+2014-07-23 05:23:54,775 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/0 on hostPort dco-node135-mgt.dco.ethz.ch:56045 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,775 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/1 on worker-20140722232232-dco-node125-mgt.dco.ethz.ch-41556 (dco-node125-mgt.dco.ethz.ch:41556) with 16 cores
+2014-07-23 05:23:54,776 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/1 on hostPort dco-node125-mgt.dco.ethz.ch:41556 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,776 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/2 on worker-20140722232232-dco-node124-mgt.dco.ethz.ch-46656 (dco-node124-mgt.dco.ethz.ch:46656) with 16 cores
+2014-07-23 05:23:54,776 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/2 on hostPort dco-node124-mgt.dco.ethz.ch:46656 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,777 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/3 on worker-20140722232232-dco-node123-mgt.dco.ethz.ch-52179 (dco-node123-mgt.dco.ethz.ch:52179) with 16 cores
+2014-07-23 05:23:54,778 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/3 on hostPort dco-node123-mgt.dco.ethz.ch:52179 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,779 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/4 on worker-20140722232232-dco-node122-mgt.dco.ethz.ch-51038 (dco-node122-mgt.dco.ethz.ch:51038) with 16 cores
+2014-07-23 05:23:54,779 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/4 on hostPort dco-node122-mgt.dco.ethz.ch:51038 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,779 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/5 on worker-20140722232232-dco-node132-mgt.dco.ethz.ch-45072 (dco-node132-mgt.dco.ethz.ch:45072) with 16 cores
+2014-07-23 05:23:54,780 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/5 on hostPort dco-node132-mgt.dco.ethz.ch:45072 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,780 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/6 on worker-20140722232232-dco-node131-mgt.dco.ethz.ch-50734 (dco-node131-mgt.dco.ethz.ch:50734) with 16 cores
+2014-07-23 05:23:54,780 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/6 on hostPort dco-node131-mgt.dco.ethz.ch:50734 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,780 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/7 on worker-20140722232232-dco-node133-mgt.dco.ethz.ch-44156 (dco-node133-mgt.dco.ethz.ch:44156) with 16 cores
+2014-07-23 05:23:54,781 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/7 on hostPort dco-node133-mgt.dco.ethz.ch:44156 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,781 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/8 on worker-20140722232232-dco-node127-mgt.dco.ethz.ch-60499 (dco-node127-mgt.dco.ethz.ch:60499) with 16 cores
+2014-07-23 05:23:54,781 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/8 on hostPort dco-node127-mgt.dco.ethz.ch:60499 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,782 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/9 on worker-20140722232232-dco-node121-mgt.dco.ethz.ch-45820 (dco-node121-mgt.dco.ethz.ch:45820) with 16 cores
+2014-07-23 05:23:54,783 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/9 on hostPort dco-node121-mgt.dco.ethz.ch:45820 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,783 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/10 on worker-20140722232232-dco-node129-mgt.dco.ethz.ch-37573 (dco-node129-mgt.dco.ethz.ch:37573) with 16 cores
+2014-07-23 05:23:54,783 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/10 on hostPort dco-node129-mgt.dco.ethz.ch:37573 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,784 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/11 on worker-20140722232232-dco-node128-mgt.dco.ethz.ch-58779 (dco-node128-mgt.dco.ethz.ch:58779) with 16 cores
+2014-07-23 05:23:54,784 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/11 on hostPort dco-node128-mgt.dco.ethz.ch:58779 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,784 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/12 on worker-20140722232232-dco-node134-mgt.dco.ethz.ch-42367 (dco-node134-mgt.dco.ethz.ch:42367) with 16 cores
+2014-07-23 05:23:54,785 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/12 on hostPort dco-node134-mgt.dco.ethz.ch:42367 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,785 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/13 on worker-20140722232231-dco-node130-mgt.dco.ethz.ch-56551 (dco-node130-mgt.dco.ethz.ch:56551) with 16 cores
+2014-07-23 05:23:54,785 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/13 on hostPort dco-node130-mgt.dco.ethz.ch:56551 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,786 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/14 on worker-20140722232232-dco-node136-mgt.dco.ethz.ch-34960 (dco-node136-mgt.dco.ethz.ch:34960) with 16 cores
+2014-07-23 05:23:54,786 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/14 on hostPort dco-node136-mgt.dco.ethz.ch:34960 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,786 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor added: app-20140723052108-0007/15 on worker-20140722232232-dco-node126-mgt.dco.ethz.ch-38949 (dco-node126-mgt.dco.ethz.ch:38949) with 16 cores
+2014-07-23 05:23:54,787 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Granted executor ID app-20140723052108-0007/15 on hostPort dco-node126-mgt.dco.ethz.ch:38949 with 16 cores, 70.0 GB RAM
+2014-07-23 05:23:54,801 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/1 is now RUNNING
+2014-07-23 05:23:54,802 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/8 is now RUNNING
+2014-07-23 05:23:54,805 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/5 is now RUNNING
+2014-07-23 05:23:54,807 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/9 is now RUNNING
+2014-07-23 05:23:54,809 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/10 is now RUNNING
+2014-07-23 05:23:54,811 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/7 is now RUNNING
+2014-07-23 05:23:54,813 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/2 is now RUNNING
+2014-07-23 05:23:54,815 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/3 is now RUNNING
+2014-07-23 05:23:54,817 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/12 is now RUNNING
+2014-07-23 05:23:54,818 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/6 is now RUNNING
+2014-07-23 05:23:54,820 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/15 is now RUNNING
+2014-07-23 05:23:54,821 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/14 is now RUNNING
+2014-07-23 05:23:54,823 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/4 is now RUNNING
+2014-07-23 05:23:54,826 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/0 is now RUNNING
+2014-07-23 05:23:54,828 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/11 is now RUNNING
+2014-07-23 05:23:54,832 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.deploy.client.AppClient$ClientActor - Executor updated: app-20140723052108-0007/13 is now RUNNING
+2014-07-23 05:23:56,960 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node130-mgt.dco.ethz.ch:38144/user/Executor#1357838184] with ID 13
+2014-07-23 05:23:56,971 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:0 as TID 0 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:56,989 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:0 as 75818 bytes in 15 ms
+2014-07-23 05:23:56,992 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:1 as TID 1 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:56,999 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:1 as 75818 bytes in 7 ms
+2014-07-23 05:23:56,999 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:2 as TID 2 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,005 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:2 as 75818 bytes in 6 ms
+2014-07-23 05:23:57,008 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:3 as TID 3 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,014 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:3 as 75818 bytes in 5 ms
+2014-07-23 05:23:57,014 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:4 as TID 4 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,020 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:4 as 75818 bytes in 6 ms
+2014-07-23 05:23:57,021 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:5 as TID 5 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,026 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:5 as 75818 bytes in 5 ms
+2014-07-23 05:23:57,026 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:6 as TID 6 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,030 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:6 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,031 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:7 as TID 7 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,035 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:7 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,035 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:8 as TID 8 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,040 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:8 as 75818 bytes in 5 ms
+2014-07-23 05:23:57,040 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:9 as TID 9 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,044 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:9 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,044 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:10 as TID 10 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,049 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:10 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,049 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:11 as TID 11 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,054 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:11 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,054 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:12 as TID 12 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,057 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:12 as 75818 bytes in 3 ms
+2014-07-23 05:23:57,058 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:13 as TID 13 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,061 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:13 as 75818 bytes in 3 ms
+2014-07-23 05:23:57,061 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:14 as TID 14 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,065 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:14 as 75818 bytes in 3 ms
+2014-07-23 05:23:57,066 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:15 as TID 15 on executor 13: dco-node130-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,069 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:15 as 75818 bytes in 3 ms
+2014-07-23 05:23:57,274 [spark-akka.actor.default-dispatcher-6] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node130-mgt.dco.ethz.ch:34576 with 40.3 GB RAM
+2014-07-23 05:23:57,797 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node122-mgt.dco.ethz.ch:49862/user/Executor#87269654] with ID 4
+2014-07-23 05:23:57,798 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:16 as TID 16 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,807 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:16 as 75818 bytes in 8 ms
+2014-07-23 05:23:57,808 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:17 as TID 17 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,816 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:17 as 75818 bytes in 8 ms
+2014-07-23 05:23:57,817 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:18 as TID 18 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,821 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:18 as 75818 bytes in 4 ms
+2014-07-23 05:23:57,822 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0:19 as TID 19 on executor 4: dco-node122-mgt.dco.ethz.ch (PROCESS_LOCAL)
+2014-07-23 05:23:57,825 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.TaskSetManager - Serialized task 1.0:19 as 75818 bytes in 2 ms
+2014-07-23 05:23:57,828 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node132-mgt.dco.ethz.ch:47724/user/Executor#1228532579] with ID 5
+2014-07-23 05:23:57,832 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node131-mgt.dco.ethz.ch:34441/user/Executor#-2080292845] with ID 6
+2014-07-23 05:23:57,841 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node128-mgt.dco.ethz.ch:34721/user/Executor#-966711341] with ID 11
+2014-07-23 05:23:57,843 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node133-mgt.dco.ethz.ch:56253/user/Executor#595690770] with ID 7
+2014-07-23 05:23:57,846 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node127-mgt.dco.ethz.ch:51939/user/Executor#-168529746] with ID 8
+2014-07-23 05:23:57,859 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node123-mgt.dco.ethz.ch:39573/user/Executor#-123764279] with ID 3
+2014-07-23 05:23:57,869 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node124-mgt.dco.ethz.ch:36284/user/Executor#1210072078] with ID 2
+2014-07-23 05:23:57,876 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node126-mgt.dco.ethz.ch:36182/user/Executor#-173199248] with ID 15
+2014-07-23 05:23:57,880 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node136-mgt.dco.ethz.ch:54807/user/Executor#1100286749] with ID 14
+2014-07-23 05:23:57,885 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node134-mgt.dco.ethz.ch:56591/user/Executor#-995271316] with ID 12
+2014-07-23 05:23:57,897 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node121-mgt.dco.ethz.ch:47122/user/Executor#-488278400] with ID 9
+2014-07-23 05:23:57,914 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node125-mgt.dco.ethz.ch:42672/user/Executor#398355462] with ID 1
+2014-07-23 05:23:57,927 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node135-mgt.dco.ethz.ch:49035/user/Executor#714491689] with ID 0
+2014-07-23 05:23:58,060 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node122-mgt.dco.ethz.ch:40525 with 40.3 GB RAM
+2014-07-23 05:23:58,087 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node132-mgt.dco.ethz.ch:57433 with 40.3 GB RAM
+2014-07-23 05:23:58,089 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node131-mgt.dco.ethz.ch:51660 with 40.3 GB RAM
+2014-07-23 05:23:58,096 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node127-mgt.dco.ethz.ch:60277 with 40.3 GB RAM
+2014-07-23 05:23:58,107 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node128-mgt.dco.ethz.ch:48811 with 40.3 GB RAM
+2014-07-23 05:23:58,111 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node133-mgt.dco.ethz.ch:57694 with 40.3 GB RAM
+2014-07-23 05:23:58,123 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node136-mgt.dco.ethz.ch:33878 with 40.3 GB RAM
+2014-07-23 05:23:58,128 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node123-mgt.dco.ethz.ch:45773 with 40.3 GB RAM
+2014-07-23 05:23:58,143 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node134-mgt.dco.ethz.ch:52707 with 40.3 GB RAM
+2014-07-23 05:23:58,145 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node126-mgt.dco.ethz.ch:45896 with 40.3 GB RAM
+2014-07-23 05:23:58,148 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node124-mgt.dco.ethz.ch:40566 with 40.3 GB RAM
+2014-07-23 05:23:58,186 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node125-mgt.dco.ethz.ch:34054 with 40.3 GB RAM
+2014-07-23 05:23:58,191 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node121-mgt.dco.ethz.ch:45279 with 40.3 GB RAM
+2014-07-23 05:23:58,203 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node135-mgt.dco.ethz.ch:38513 with 40.3 GB RAM
+2014-07-23 05:23:58,770 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.cluster.SparkDeploySchedulerBackend - Registered executor: Actor[akka.tcp://sparkExecutor@dco-node129-mgt.dco.ethz.ch:44330/user/Executor#-2002813542] with ID 10
+2014-07-23 05:23:59,024 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.storage.BlockManagerInfo - Registering block manager dco-node129-mgt.dco.ethz.ch:38953 with 40.3 GB RAM
+2014-07-23 05:25:23,162 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 17 in 85346 ms on dco-node122-mgt.dco.ethz.ch (progress: 1/20)
+2014-07-23 05:25:23,164 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 17)
+2014-07-23 05:25:24,773 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 16)
+2014-07-23 05:25:24,773 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 16 in 86970 ms on dco-node122-mgt.dco.ethz.ch (progress: 2/20)
+2014-07-23 05:25:26,657 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 19)
+2014-07-23 05:25:26,657 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 19 in 88832 ms on dco-node122-mgt.dco.ethz.ch (progress: 3/20)
+2014-07-23 05:25:39,658 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 18)
+2014-07-23 05:25:39,658 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 18 in 101836 ms on dco-node122-mgt.dco.ethz.ch (progress: 4/20)
+2014-07-23 05:26:08,457 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 5)
+2014-07-23 05:26:08,457 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 5 in 131432 ms on dco-node130-mgt.dco.ethz.ch (progress: 5/20)
+2014-07-23 05:26:19,386 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 6)
+2014-07-23 05:26:19,386 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 6 in 142356 ms on dco-node130-mgt.dco.ethz.ch (progress: 6/20)
+2014-07-23 05:26:29,870 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 14)
+2014-07-23 05:26:29,870 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 14 in 152805 ms on dco-node130-mgt.dco.ethz.ch (progress: 7/20)
+2014-07-23 05:26:37,244 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 13 in 160184 ms on dco-node130-mgt.dco.ethz.ch (progress: 8/20)
+2014-07-23 05:26:37,244 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 13)
+2014-07-23 05:26:46,715 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 7 in 169682 ms on dco-node130-mgt.dco.ethz.ch (progress: 9/20)
+2014-07-23 05:26:46,715 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 7)
+2014-07-23 05:26:57,898 [spark-akka.actor.default-dispatcher-6] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 8)
+2014-07-23 05:26:57,898 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 8 in 180859 ms on dco-node130-mgt.dco.ethz.ch (progress: 10/20)
+2014-07-23 05:26:59,056 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 12)
+2014-07-23 05:26:59,056 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 12 in 181998 ms on dco-node130-mgt.dco.ethz.ch (progress: 11/20)
+2014-07-23 05:27:00,342 [spark-akka.actor.default-dispatcher-6] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 10)
+2014-07-23 05:27:00,342 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 10 in 183294 ms on dco-node130-mgt.dco.ethz.ch (progress: 12/20)
+2014-07-23 05:27:06,422 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 15 in 189352 ms on dco-node130-mgt.dco.ethz.ch (progress: 13/20)
+2014-07-23 05:27:06,423 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 15)
+2014-07-23 05:27:06,758 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 11 in 189704 ms on dco-node130-mgt.dco.ethz.ch (progress: 14/20)
+2014-07-23 05:27:06,758 [spark-akka.actor.default-dispatcher-5] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 11)
+2014-07-23 05:27:08,082 [spark-akka.actor.default-dispatcher-4] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 9)
+2014-07-23 05:27:08,082 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 9 in 191038 ms on dco-node130-mgt.dco.ethz.ch (progress: 15/20)
+2014-07-23 05:27:13,563 [spark-akka.actor.default-dispatcher-3] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 4)
+2014-07-23 05:27:13,563 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 4 in 196545 ms on dco-node130-mgt.dco.ethz.ch (progress: 16/20)
+2014-07-23 05:27:43,130 [spark-akka.actor.default-dispatcher-16] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 1)
+2014-07-23 05:27:43,130 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 1 in 226134 ms on dco-node130-mgt.dco.ethz.ch (progress: 17/20)
+2014-07-23 05:27:44,599 [spark-akka.actor.default-dispatcher-18] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 3)
+2014-07-23 05:27:44,599 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 3 in 227588 ms on dco-node130-mgt.dco.ethz.ch (progress: 18/20)
+2014-07-23 05:27:45,372 [spark-akka.actor.default-dispatcher-2] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 2)
+2014-07-23 05:27:45,372 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 2 in 228369 ms on dco-node130-mgt.dco.ethz.ch (progress: 19/20)
+2014-07-23 05:27:54,573 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 0)
+2014-07-23 05:27:54,573 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 0 in 237605 ms on dco-node130-mgt.dco.ethz.ch (progress: 20/20)
+2014-07-23 05:27:54,575 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Stage 1 (foreach at RemoveInfrequentWordsApp.scala:27) finished in 405.599 s
+2014-07-23 05:27:54,575 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2014-07-23 05:27:54,585 [main] INFO  org.apache.spark.SparkContext - Job finished: foreach at RemoveInfrequentWordsApp.scala:27, took 405.787873316 s
