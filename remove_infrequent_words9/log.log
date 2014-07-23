@@ -419,3 +419,16 @@ java.net.BindException: Address already in use
 2014-07-23 05:39:04,263 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 9 in 191637 ms on dco-node130-mgt.dco.ethz.ch (progress: 14/20)
 2014-07-23 05:39:06,103 [spark-akka.actor.default-dispatcher-21] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 15)
 2014-07-23 05:39:06,103 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 15 in 193456 ms on dco-node130-mgt.dco.ethz.ch (progress: 15/20)
+2014-07-23 05:39:10,793 [spark-akka.actor.default-dispatcher-22] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 4)
+2014-07-23 05:39:10,793 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 4 in 198194 ms on dco-node130-mgt.dco.ethz.ch (progress: 16/20)
+2014-07-23 05:39:25,932 [spark-akka.actor.default-dispatcher-20] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 3)
+2014-07-23 05:39:25,932 [Result resolver thread-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 3 in 213341 ms on dco-node130-mgt.dco.ethz.ch (progress: 17/20)
+2014-07-23 05:39:39,849 [spark-akka.actor.default-dispatcher-15] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 1)
+2014-07-23 05:39:39,849 [Result resolver thread-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 1 in 227272 ms on dco-node130-mgt.dco.ethz.ch (progress: 18/20)
+2014-07-23 05:39:42,226 [spark-akka.actor.default-dispatcher-14] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 2)
+2014-07-23 05:39:42,226 [Result resolver thread-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 2 in 229641 ms on dco-node130-mgt.dco.ethz.ch (progress: 19/20)
+2014-07-23 05:39:48,167 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Completed ResultTask(1, 0)
+2014-07-23 05:39:48,167 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished TID 0 in 235608 ms on dco-node130-mgt.dco.ethz.ch (progress: 20/20)
+2014-07-23 05:39:48,168 [Result resolver thread-3] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2014-07-23 05:39:48,170 [spark-akka.actor.default-dispatcher-17] INFO  org.apache.spark.scheduler.DAGScheduler - Stage 1 (foreach at RemoveInfrequentWordsApp.scala:27) finished in 651.276 s
+2014-07-23 05:39:48,179 [main] INFO  org.apache.spark.SparkContext - Job finished: foreach at RemoveInfrequentWordsApp.scala:27, took 651.435133808 s
