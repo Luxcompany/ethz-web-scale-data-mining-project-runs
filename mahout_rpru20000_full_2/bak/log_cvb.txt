@@ -1,0 +1,55 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/07/24 14:45:09 WARN driver.MahoutDriver: No cvb.props found on classpath, will use command-line arguments only
+14/07/24 14:45:10 INFO common.AbstractJob: Command line arguments: {--convergenceDelta=[0.0], --dictionary=[/runs/pru_20000_full//seqdir-sparse-lda/dictionary.file-*], --doc_topic_output=[/runs/pru_20000_full//cas-lda-topics], --doc_topic_smoothing=[1.0E-4], --endPhase=[2147483647], --input=[/runs/pru_20000_full//cas-out-matrix/matrix], --iteration_block_size=[10], --maxIter=[10], --max_doc_topic_iters=[10], --num_reduce_tasks=[2000], --num_topics=[100], --num_train_threads=[4], --num_update_threads=[4], --output=[/runs/pru_20000_full//cas-lda], --random_seed=[23], --startPhase=[0], --tempDir=[/runs/pru_20000_full//cas-temp/], --term_topic_smoothing=[1.0E-4], --test_set_fraction=[0.1]}
+14/07/24 14:45:10 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Will run Collapsed Variational Bayes (0th-derivative approximation) learning for LDA on /runs/pru_20000_full/cas-out-matrix/matrix (numTerms: 17000), finding 100-topics, with document/topic prior 1.0E-4, topic/term prior 1.0E-4.  Maximum iterations to run will be 10, unless the change in perplexity is less than 0.0.  Topic model output (p(term|topic) for each topic) will be stored /runs/pru_20000_full/cas-lda.  Random initialization seed is 23, holding out 0.1 of the data for perplexity check
+
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Dictionary to be used located /runs/pru_20000_full/seqdir-sparse-lda/dictionary.file-*
+p(topic|docId) will be stored /runs/pru_20000_full/cas-lda-topics
+
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-1
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-2
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-3
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-4
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-5
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-6
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-7
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-8
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Found previous state: /runs/pru_20000_full/cas-temp/topicModelState/model-9
+14/07/24 14:45:11 INFO cvb.CVB0Driver: Current iteration number: 9
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-1 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-2 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-3 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-4 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-5 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-6 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-7 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-8 does not exist, returning NaN
+14/07/24 14:45:11 WARN cvb.CVB0Driver: Perplexity path /runs/pru_20000_full/cas-temp/topicModelState/perplexity-9 does not exist, returning NaN
+14/07/24 14:45:11 INFO cvb.CVB0Driver: About to run iteration 10 of 10
+14/07/24 14:45:11 INFO cvb.CVB0Driver: About to run: Iteration 10 of 10, input path: /runs/pru_20000_full/cas-temp/topicModelState/model-9
+14/07/24 14:45:11 INFO Configuration.deprecation: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+14/07/24 14:45:11 INFO Configuration.deprecation: mapred.compress.map.output is deprecated. Instead, use mapreduce.map.output.compress
+14/07/24 14:45:11 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+Exception in thread "main" java.lang.IllegalStateException: No part files found in model path '/runs/pru_20000_full/cas-temp/topicModelState/model-9'
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:172)
+	at org.apache.mahout.clustering.lda.cvb.CVB0Driver.setModelPaths(CVB0Driver.java:513)
+	at org.apache.mahout.clustering.lda.cvb.CVB0Driver.runIteration(CVB0Driver.java:499)
+	at org.apache.mahout.clustering.lda.cvb.CVB0Driver.run(CVB0Driver.java:319)
+	at org.apache.mahout.clustering.lda.cvb.CVB0Driver.run(CVB0Driver.java:198)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.mahout.clustering.lda.cvb.CVB0Driver.main(CVB0Driver.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:72)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:145)
+	at org.apache.hadoop.util.ProgramDriver.driver(ProgramDriver.java:153)
+	at org.apache.mahout.driver.MahoutDriver.main(MahoutDriver.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
