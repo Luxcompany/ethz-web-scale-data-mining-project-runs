@@ -1,0 +1,101 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/03 12:41:07 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out_50t_15i/00/seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_15i/00/cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[50]}
+14/08/03 12:41:07 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/08/03 12:41:08 INFO vectors.VectorDumper: Sort? true
+14/08/03 12:41:08 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 119731
+	at org.apache.mahout.utils.vectors.VectorHelper$2.apply(VectorHelper.java:132)
+	at org.apache.mahout.utils.vectors.VectorHelper$2.apply(VectorHelper.java:129)
+	at com.google.common.collect.Iterators$8.next(Iterators.java:812)
+	at java.util.AbstractCollection.toArray(AbstractCollection.java:141)
+	at java.util.ArrayList.<init>(ArrayList.java:168)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:119)
+	at org.apache.mahout.utils.vectors.VectorHelper.toWeightedTerms(VectorHelper.java:128)
+	at org.apache.mahout.utils.vectors.VectorHelper.vectorToJson(VectorHelper.java:147)
+	at org.apache.mahout.utils.vectors.VectorDumper.run(VectorDumper.java:242)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.mahout.utils.vectors.VectorDumper.main(VectorDumper.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:72)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:145)
+	at org.apache.hadoop.util.ProgramDriver.driver(ProgramDriver.java:153)
+	at org.apache.mahout.driver.MahoutDriver.main(MahoutDriver.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/04 17:35:17 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out_50t_15i//seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_15i//cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[10]}
+14/08/04 17:35:18 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Exception in thread "main" java.io.FileNotFoundException: File does not exist: /runs/pru_500_out_50t_15i/cas-lda
+	at org.apache.hadoop.hdfs.DistributedFileSystem$17.doCall(DistributedFileSystem.java:1128)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$17.doCall(DistributedFileSystem.java:1120)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1120)
+	at org.apache.mahout.utils.vectors.VectorDumper.run(VectorDumper.java:99)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.mahout.utils.vectors.VectorDumper.main(VectorDumper.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:72)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:145)
+	at org.apache.hadoop.util.ProgramDriver.driver(ProgramDriver.java:153)
+	at org.apache.mahout.driver.MahoutDriver.main(MahoutDriver.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/04 17:36:11 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out_50t_15i/00/seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_15i/00/cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[10]}
+14/08/04 17:36:11 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/08/04 17:36:12 INFO vectors.VectorDumper: Sort? true
+14/08/04 17:36:12 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 119731
+	at org.apache.mahout.utils.vectors.VectorHelper$2.apply(VectorHelper.java:132)
+	at org.apache.mahout.utils.vectors.VectorHelper$2.apply(VectorHelper.java:129)
+	at com.google.common.collect.Iterators$8.next(Iterators.java:812)
+	at java.util.AbstractCollection.toArray(AbstractCollection.java:141)
+	at java.util.ArrayList.<init>(ArrayList.java:168)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:119)
+	at org.apache.mahout.utils.vectors.VectorHelper.toWeightedTerms(VectorHelper.java:128)
+	at org.apache.mahout.utils.vectors.VectorHelper.vectorToJson(VectorHelper.java:147)
+	at org.apache.mahout.utils.vectors.VectorDumper.run(VectorDumper.java:242)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.mahout.utils.vectors.VectorDumper.main(VectorDumper.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:72)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:145)
+	at org.apache.hadoop.util.ProgramDriver.driver(ProgramDriver.java:153)
+	at org.apache.mahout.driver.MahoutDriver.main(MahoutDriver.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/04 17:38:12 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out/00/seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_15i/00/cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[10]}
+14/08/04 17:38:12 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/08/04 17:38:13 INFO vectors.VectorDumper: Sort? true
+14/08/04 17:38:14 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt
+14/08/04 17:38:17 INFO driver.MahoutDriver: Program took 5696 ms (Minutes: 0.09493333333333333)
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/04 17:41:28 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out/00/seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_15i/00/cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[50]}
+14/08/04 17:41:29 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/08/04 17:41:29 INFO vectors.VectorDumper: Sort? true
+14/08/04 17:41:30 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_p500_run_shard00_50t_15i/terms-topic.txt
+14/08/04 17:41:33 INFO driver.MahoutDriver: Program took 5133 ms (Minutes: 0.08555)

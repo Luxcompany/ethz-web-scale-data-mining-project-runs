@@ -1,0 +1,7 @@
+Running on hadoop, using /opt/hadoop-2.4.0/bin/hadoop and HADOOP_CONF_DIR=
+MAHOUT-JOB: /opt/mahout/examples/target/mahout-examples-1.0-SNAPSHOT-job.jar
+14/08/04 20:39:17 INFO common.AbstractJob: Command line arguments: {--dictionary=[/runs/pru_500_out/00/seqdir-sparse-lda/dictionary.file-*], --dictionaryType=[sequencefile], --endPhase=[2147483647], --input=[/runs/pru_500_out_50t_5i/00/cas-lda], --output=[/disk3/user_work/runs/mahout_p500_run_shard00_50t_5i/terms-topic.txt], --printKey=[true], --sortVectors=[true], --startPhase=[0], --tempDir=[temp], --vectorSize=[50]}
+14/08/04 20:39:17 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/08/04 20:39:18 INFO vectors.VectorDumper: Sort? true
+14/08/04 20:39:19 INFO vectors.VectorDumper: Output file: /disk3/user_work/runs/mahout_p500_run_shard00_50t_5i/terms-topic.txt
+14/08/04 20:39:22 INFO driver.MahoutDriver: Program took 5246 ms (Minutes: 0.08743333333333334)
